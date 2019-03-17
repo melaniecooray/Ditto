@@ -15,6 +15,14 @@
 		7B5AFED1223DD0A500B6168B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5AFED0223DD0A500B6168B /* Assets.xcassets */; };
 		7B5AFED4223DD0A500B6168B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5AFED2223DD0A500B6168B /* LaunchScreen.storyboard */; };
 		7B5AFEDF223DD0A600B6168B /* DittoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEDE223DD0A600B6168B /* DittoUITests.swift */; };
+		7B5AFEEA223DD2E600B6168B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B5AFEE9223DD2E600B6168B /* GoogleService-Info.plist */; };
+		7B5AFEF4223DE4EE00B6168B /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEF3223DE4EE00B6168B /* ProfileVC.swift */; };
+		7B5AFEF6223DE4FD00B6168B /* CurrentPlaylistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEF5223DE4FD00B6168B /* CurrentPlaylistVC.swift */; };
+		7B5AFEF8223DE53200B6168B /* PlaylistsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEF7223DE53200B6168B /* PlaylistsVC.swift */; };
+		7B5AFEFA223DE54000B6168B /* SpotifyConnectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEF9223DE54000B6168B /* SpotifyConnectVC.swift */; };
+		7B5AFEFC223DE55400B6168B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEFB223DE55400B6168B /* SignUpVC.swift */; };
+		7B5AFEFE223DE56100B6168B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEFD223DE56100B6168B /* LoginVC.swift */; };
+		7B5AFF00223DE57400B6168B /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEFF223DE57400B6168B /* LaunchVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +49,14 @@
 		7B5AFEDA223DD0A600B6168B /* DittoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DittoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5AFEDE223DD0A600B6168B /* DittoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoUITests.swift; sourceTree = "<group>"; };
 		7B5AFEE0223DD0A600B6168B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B5AFEE9223DD2E600B6168B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7B5AFEF3223DE4EE00B6168B /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		7B5AFEF5223DE4FD00B6168B /* CurrentPlaylistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPlaylistVC.swift; sourceTree = "<group>"; };
+		7B5AFEF7223DE53200B6168B /* PlaylistsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsVC.swift; sourceTree = "<group>"; };
+		7B5AFEF9223DE54000B6168B /* SpotifyConnectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyConnectVC.swift; sourceTree = "<group>"; };
+		7B5AFEFB223DE55400B6168B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		7B5AFEFD223DE56100B6168B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		7B5AFEFF223DE57400B6168B /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
 		83B198A80D7721665334537E /* Pods-DittoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DittoUITests.debug.xcconfig"; path = "Target Support Files/Pods-DittoUITests/Pods-DittoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D8F77EEC14D69478BDD6B73 /* Pods_Ditto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ditto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDBA1BDEAC3FC82272D3F5CF /* Pods_DittoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DittoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,11 +114,13 @@
 		7B5AFEC8223DD0A300B6168B /* Ditto */ = {
 			isa = PBXGroup;
 			children = (
+				7B5AFEEB223DE43F00B6168B /* Controllers */,
 				7B5AFEC9223DD0A300B6168B /* AppDelegate.swift */,
 				7B5AFECB223DD0A300B6168B /* ViewController.swift */,
 				7B5AFECD223DD0A300B6168B /* Main.storyboard */,
 				7B5AFED0223DD0A500B6168B /* Assets.xcassets */,
 				7B5AFED2223DD0A500B6168B /* LaunchScreen.storyboard */,
+				7B5AFEE9223DD2E600B6168B /* GoogleService-Info.plist */,
 				7B5AFED5223DD0A500B6168B /* Info.plist */,
 			);
 			path = Ditto;
@@ -117,6 +135,76 @@
 			path = DittoUITests;
 			sourceTree = "<group>";
 		};
+		7B5AFEEB223DE43F00B6168B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B5AFEF2223DE4D100B6168B /* ProfileVC */,
+				7B5AFEF1223DE4C200B6168B /* CurrentPlaylistVC */,
+				7B5AFEF0223DE49E00B6168B /* PlaylistsVC */,
+				7B5AFEEF223DE49200B6168B /* SpotifyConnectVC */,
+				7B5AFEEE223DE48B00B6168B /* SignUpVC */,
+				7B5AFEED223DE47900B6168B /* LoginVC */,
+				7B5AFEEC223DE44700B6168B /* LaunchVC */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7B5AFEEC223DE44700B6168B /* LaunchVC */ = {
+			isa = PBXGroup;
+			children = (
+				7B5AFEFF223DE57400B6168B /* LaunchVC.swift */,
+			);
+			path = LaunchVC;
+			sourceTree = "<group>";
+		};
+		7B5AFEED223DE47900B6168B /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				7B5AFEFD223DE56100B6168B /* LoginVC.swift */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		7B5AFEEE223DE48B00B6168B /* SignUpVC */ = {
+			isa = PBXGroup;
+			children = (
+				7B5AFEFB223DE55400B6168B /* SignUpVC.swift */,
+			);
+			path = SignUpVC;
+			sourceTree = "<group>";
+		};
+		7B5AFEEF223DE49200B6168B /* SpotifyConnectVC */ = {
+			isa = PBXGroup;
+			children = (
+				7B5AFEF9223DE54000B6168B /* SpotifyConnectVC.swift */,
+			);
+			path = SpotifyConnectVC;
+			sourceTree = "<group>";
+		};
+		7B5AFEF0223DE49E00B6168B /* PlaylistsVC */ = {
+			isa = PBXGroup;
+			children = (
+				7B5AFEF7223DE53200B6168B /* PlaylistsVC.swift */,
+			);
+			path = PlaylistsVC;
+			sourceTree = "<group>";
+		};
+		7B5AFEF1223DE4C200B6168B /* CurrentPlaylistVC */ = {
+			isa = PBXGroup;
+			children = (
+				7B5AFEF5223DE4FD00B6168B /* CurrentPlaylistVC.swift */,
+			);
+			path = CurrentPlaylistVC;
+			sourceTree = "<group>";
+		};
+		7B5AFEF2223DE4D100B6168B /* ProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				7B5AFEF3223DE4EE00B6168B /* ProfileVC.swift */,
+			);
+			path = ProfileVC;
+			sourceTree = "<group>";
+		};
 		D732CE738B0647F19AB53E86 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,7 +213,6 @@
 				83B198A80D7721665334537E /* Pods-DittoUITests.debug.xcconfig */,
 				66FF58C1B2B71EAFE1DB239C /* Pods-DittoUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -214,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B5AFED4223DD0A500B6168B /* LaunchScreen.storyboard in Resources */,
+				7B5AFEEA223DD2E600B6168B /* GoogleService-Info.plist in Resources */,
 				7B5AFED1223DD0A500B6168B /* Assets.xcassets in Resources */,
 				7B5AFECF223DD0A300B6168B /* Main.storyboard in Resources */,
 			);
@@ -240,6 +328,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Ditto/Pods-Ditto-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -247,6 +336,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -304,7 +394,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5AFEFC223DE55400B6168B /* SignUpVC.swift in Sources */,
+				7B5AFEFA223DE54000B6168B /* SpotifyConnectVC.swift in Sources */,
+				7B5AFEFE223DE56100B6168B /* LoginVC.swift in Sources */,
+				7B5AFEF6223DE4FD00B6168B /* CurrentPlaylistVC.swift in Sources */,
+				7B5AFEF4223DE4EE00B6168B /* ProfileVC.swift in Sources */,
+				7B5AFF00223DE57400B6168B /* LaunchVC.swift in Sources */,
 				7B5AFECC223DD0A300B6168B /* ViewController.swift in Sources */,
+				7B5AFEF8223DE53200B6168B /* PlaylistsVC.swift in Sources */,
 				7B5AFECA223DD0A300B6168B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

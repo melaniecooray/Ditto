@@ -7,6 +7,7 @@ target 'Ditto' do
 
   # Pods for Ditto
   pod 'Firebase/Database'
+  pod 'Firebase/Core'
 
   target 'DittoUITests' do
     inherit! :search_paths
