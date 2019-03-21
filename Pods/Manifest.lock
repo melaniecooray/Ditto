@@ -57,10 +57,14 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - SkyFloatingLabelTextField (3.6.0)
+  - SpotifyLogin (0.1.6)
 
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
+  - SkyFloatingLabelTextField
+  - SpotifyLogin (~> 0.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -74,6 +78,8 @@ SPEC REPOS:
     - GoogleUtilities
     - leveldb-library
     - nanopb
+    - SkyFloatingLabelTextField
+    - SpotifyLogin
 
 SPEC CHECKSUMS:
   Firebase: 749a8ff4962f9d8c79dda1966de20f6f77583d67
@@ -86,7 +92,9 @@ SPEC CHECKSUMS:
   GoogleUtilities: 111a012f4c3a29c9e7c954c082fafd6ee3c999c0
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
+  SpotifyLogin: 9cdf82ff13e5f37e5ddc7fd07cf9793a9ebd1124
 
-PODFILE CHECKSUM: bfc78f62681814b24dd3a2919a4d0fb743b1a6ed
+PODFILE CHECKSUM: 8e0d1f8da90a2fed15c33aa6a169fc65ec2fd51d
 
 COCOAPODS: 1.6.0

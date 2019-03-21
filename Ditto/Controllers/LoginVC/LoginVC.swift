@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import SkyFloatingLabelTextField
 
 class LoginVC: UIViewController {
+    
+    var emailTextField : SkyFloatingLabelTextField!
+    var passwordTextField : SkyFloatingLabelTextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()

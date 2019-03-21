@@ -8,6 +8,9 @@ target 'Ditto' do
   # Pods for Ditto
   pod 'Firebase/Database'
   pod 'Firebase/Core'
+  pod 'SkyFloatingLabelTextField'
+  source 'https://github.com/CocoaPods/Specs.git'
+  pod 'SpotifyLogin', '~> 0.1'
 
   target 'DittoUITests' do
     inherit! :search_paths

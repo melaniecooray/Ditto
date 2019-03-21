@@ -11,12 +11,16 @@ import UIKit
 extension LaunchVC {
     
     func initUI() {
-        
+        setupSubtitle()
     }
     
-    func setupLaunchButton() {
-        launchButton = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 50))
-        launchButton.center = CGPoint(x: view.frame.width/2, y: 400)
+    func setupSubtitle() {
+        subtitle = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 50))
+        subtitle.center = CGPoint(x: view.frame.width/2, y: 500)
+        subtitle.text = "Experience more together"
+        subtitle.font = UIFont(name: "Roboto", size: 15)
+        subtitle.textAlignment = .center
+        view.addSubview(subtitle)
     }
     
 }

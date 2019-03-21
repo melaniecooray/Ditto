@@ -19,11 +19,14 @@
 		7B5AFEF4223DE4EE00B6168B /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEF3223DE4EE00B6168B /* ProfileVC.swift */; };
 		7B5AFEF6223DE4FD00B6168B /* CurrentPlaylistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEF5223DE4FD00B6168B /* CurrentPlaylistVC.swift */; };
 		7B5AFEF8223DE53200B6168B /* PlaylistsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEF7223DE53200B6168B /* PlaylistsVC.swift */; };
-		7B5AFEFA223DE54000B6168B /* SpotifyConnectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEF9223DE54000B6168B /* SpotifyConnectVC.swift */; };
+		7B5AFEFA223DE54000B6168B /* ConnectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEF9223DE54000B6168B /* ConnectVC.swift */; };
 		7B5AFEFC223DE55400B6168B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEFB223DE55400B6168B /* SignUpVC.swift */; };
 		7B5AFEFE223DE56100B6168B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEFD223DE56100B6168B /* LoginVC.swift */; };
 		7B5AFF00223DE57400B6168B /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEFF223DE57400B6168B /* LaunchVC.swift */; };
 		7B5AFF02223DE77000B6168B /* LaunchVC-uisetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFF01223DE77000B6168B /* LaunchVC-uisetup.swift */; };
+		7B5AFF04223E00EA00B6168B /* LoginVC-uisetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFF03223E00EA00B6168B /* LoginVC-uisetup.swift */; };
+		7B5AFF0622434B4400B6168B /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5AFF0522434B4300B6168B /* SpotifyiOS.framework */; };
+		7B5AFF0C2243567D00B6168B /* ConnectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFF0B2243567D00B6168B /* ConnectButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +57,15 @@
 		7B5AFEF3223DE4EE00B6168B /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		7B5AFEF5223DE4FD00B6168B /* CurrentPlaylistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPlaylistVC.swift; sourceTree = "<group>"; };
 		7B5AFEF7223DE53200B6168B /* PlaylistsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsVC.swift; sourceTree = "<group>"; };
-		7B5AFEF9223DE54000B6168B /* SpotifyConnectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyConnectVC.swift; sourceTree = "<group>"; };
+		7B5AFEF9223DE54000B6168B /* ConnectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectVC.swift; sourceTree = "<group>"; };
 		7B5AFEFB223DE55400B6168B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		7B5AFEFD223DE56100B6168B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		7B5AFEFF223DE57400B6168B /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
 		7B5AFF01223DE77000B6168B /* LaunchVC-uisetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LaunchVC-uisetup.swift"; sourceTree = "<group>"; };
+		7B5AFF03223E00EA00B6168B /* LoginVC-uisetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVC-uisetup.swift"; sourceTree = "<group>"; };
+		7B5AFF0522434B4300B6168B /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
+		7B5AFF0722434E5400B6168B /* Ditto-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ditto-Bridging-Header.h"; sourceTree = "<group>"; };
+		7B5AFF0B2243567D00B6168B /* ConnectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectButton.swift; sourceTree = "<group>"; };
 		83B198A80D7721665334537E /* Pods-DittoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DittoUITests.debug.xcconfig"; path = "Target Support Files/Pods-DittoUITests/Pods-DittoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D8F77EEC14D69478BDD6B73 /* Pods_Ditto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ditto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDBA1BDEAC3FC82272D3F5CF /* Pods_DittoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DittoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				524094C77B7E54EB91B1B297 /* Pods_Ditto.framework in Frameworks */,
+				7B5AFF0622434B4400B6168B /* SpotifyiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +95,7 @@
 		5B869B98994058ADADABF6D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B5AFF0522434B4300B6168B /* SpotifyiOS.framework */,
 				8D8F77EEC14D69478BDD6B73 /* Pods_Ditto.framework */,
 				BDBA1BDEAC3FC82272D3F5CF /* Pods_DittoUITests.framework */,
 			);
@@ -96,6 +105,7 @@
 		7B5AFEBD223DD0A200B6168B = {
 			isa = PBXGroup;
 			children = (
+				7B5AFF0722434E5400B6168B /* Ditto-Bridging-Header.h */,
 				7B5AFEC8223DD0A300B6168B /* Ditto */,
 				7B5AFEDD223DD0A600B6168B /* DittoUITests */,
 				7B5AFEC7223DD0A300B6168B /* Products */,
@@ -116,8 +126,8 @@
 		7B5AFEC8223DD0A300B6168B /* Ditto */ = {
 			isa = PBXGroup;
 			children = (
+				7B5AFF0A2243519900B6168B /* AppDelegates */,
 				7B5AFEEB223DE43F00B6168B /* Controllers */,
-				7B5AFEC9223DD0A300B6168B /* AppDelegate.swift */,
 				7B5AFECB223DD0A300B6168B /* ViewController.swift */,
 				7B5AFECD223DD0A300B6168B /* Main.storyboard */,
 				7B5AFED0223DD0A500B6168B /* Assets.xcassets */,
@@ -143,7 +153,7 @@
 				7B5AFEF2223DE4D100B6168B /* ProfileVC */,
 				7B5AFEF1223DE4C200B6168B /* CurrentPlaylistVC */,
 				7B5AFEF0223DE49E00B6168B /* PlaylistsVC */,
-				7B5AFEEF223DE49200B6168B /* SpotifyConnectVC */,
+				7B5AFEEF223DE49200B6168B /* ConnectVC */,
 				7B5AFEEE223DE48B00B6168B /* SignUpVC */,
 				7B5AFEED223DE47900B6168B /* LoginVC */,
 				7B5AFEEC223DE44700B6168B /* LaunchVC */,
@@ -164,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				7B5AFEFD223DE56100B6168B /* LoginVC.swift */,
+				7B5AFF03223E00EA00B6168B /* LoginVC-uisetup.swift */,
 			);
 			path = LoginVC;
 			sourceTree = "<group>";
@@ -176,12 +187,13 @@
 			path = SignUpVC;
 			sourceTree = "<group>";
 		};
-		7B5AFEEF223DE49200B6168B /* SpotifyConnectVC */ = {
+		7B5AFEEF223DE49200B6168B /* ConnectVC */ = {
 			isa = PBXGroup;
 			children = (
-				7B5AFEF9223DE54000B6168B /* SpotifyConnectVC.swift */,
+				7B5AFEF9223DE54000B6168B /* ConnectVC.swift */,
+				7B5AFF0B2243567D00B6168B /* ConnectButton.swift */,
 			);
-			path = SpotifyConnectVC;
+			path = ConnectVC;
 			sourceTree = "<group>";
 		};
 		7B5AFEF0223DE49E00B6168B /* PlaylistsVC */ = {
@@ -206,6 +218,14 @@
 				7B5AFEF3223DE4EE00B6168B /* ProfileVC.swift */,
 			);
 			path = ProfileVC;
+			sourceTree = "<group>";
+		};
+		7B5AFF0A2243519900B6168B /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				7B5AFEC9223DD0A300B6168B /* AppDelegate.swift */,
+			);
+			path = AppDelegates;
 			sourceTree = "<group>";
 		};
 		D732CE738B0647F19AB53E86 /* Pods */ = {
@@ -330,6 +350,8 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Ditto/Pods-Ditto-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SpotifyLogin/SpotifyLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -338,6 +360,8 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpotifyLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -397,9 +421,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5AFF0C2243567D00B6168B /* ConnectButton.swift in Sources */,
 				7B5AFEFC223DE55400B6168B /* SignUpVC.swift in Sources */,
+				7B5AFF04223E00EA00B6168B /* LoginVC-uisetup.swift in Sources */,
 				7B5AFF02223DE77000B6168B /* LaunchVC-uisetup.swift in Sources */,
-				7B5AFEFA223DE54000B6168B /* SpotifyConnectVC.swift in Sources */,
+				7B5AFEFA223DE54000B6168B /* ConnectVC.swift in Sources */,
 				7B5AFEFE223DE56100B6168B /* LoginVC.swift in Sources */,
 				7B5AFEF6223DE4FD00B6168B /* CurrentPlaylistVC.swift in Sources */,
 				7B5AFEF4223DE4EE00B6168B /* ProfileVC.swift in Sources */,
@@ -571,6 +597,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y2JVY29H4R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Ditto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -578,6 +608,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.Ditto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ditto-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -590,6 +621,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y2JVY29H4R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Ditto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -597,6 +632,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.Ditto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ditto-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -10,7 +10,7 @@ import UIKit
 
 class LaunchVC: UIViewController {
     
-    var launchButton: UIButton!
+    var subtitle : UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
