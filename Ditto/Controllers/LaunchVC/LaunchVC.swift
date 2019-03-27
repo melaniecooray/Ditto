@@ -11,6 +11,8 @@ import UIKit
 class LaunchVC: UIViewController {
     
     var subtitle : UILabel!
+    
+    var openButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
