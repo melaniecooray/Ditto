@@ -10,7 +10,6 @@
 		524094C77B7E54EB91B1B297 /* Pods_Ditto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8F77EEC14D69478BDD6B73 /* Pods_Ditto.framework */; };
 		6D07C94E478C6D416799BBAA /* Pods_DittoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDBA1BDEAC3FC82272D3F5CF /* Pods_DittoUITests.framework */; };
 		7B5AFECA223DD0A300B6168B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEC9223DD0A300B6168B /* AppDelegate.swift */; };
-		7B5AFECC223DD0A300B6168B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFECB223DD0A300B6168B /* ViewController.swift */; };
 		7B5AFECF223DD0A300B6168B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5AFECD223DD0A300B6168B /* Main.storyboard */; };
 		7B5AFED1223DD0A500B6168B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5AFED0223DD0A500B6168B /* Assets.xcassets */; };
 		7B5AFED4223DD0A500B6168B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5AFED2223DD0A500B6168B /* LaunchScreen.storyboard */; };
@@ -45,7 +44,6 @@
 		66FF58C1B2B71EAFE1DB239C /* Pods-DittoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DittoUITests.release.xcconfig"; path = "Target Support Files/Pods-DittoUITests/Pods-DittoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7B5AFEC6223DD0A300B6168B /* Ditto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ditto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5AFEC9223DD0A300B6168B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B5AFECB223DD0A300B6168B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B5AFECE223DD0A300B6168B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B5AFED0223DD0A500B6168B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B5AFED3223DD0A500B6168B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -92,6 +90,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		421D8FED22529306000E5F28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		421D8FEE2252930F000E5F28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		421D8FF022529339000E5F28 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		421D8FF12252933D000E5F28 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7B5AFED0223DD0A500B6168B /* Assets.xcassets */,
+			);
+			name = Resources;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		421D8FF222529347000E5F28 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
 		5B869B98994058ADADABF6D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,10 +162,13 @@
 			isa = PBXGroup;
 			children = (
 				7B5AFF0A2243519900B6168B /* AppDelegates */,
+				421D8FED22529306000E5F28 /* Models */,
+				421D8FEE2252930F000E5F28 /* Views */,
 				7B5AFEEB223DE43F00B6168B /* Controllers */,
-				7B5AFECB223DD0A300B6168B /* ViewController.swift */,
+				421D8FF222529347000E5F28 /* Clients */,
+				421D8FF022529339000E5F28 /* Helpers */,
+				421D8FF12252933D000E5F28 /* Resources */,
 				7B5AFECD223DD0A300B6168B /* Main.storyboard */,
-				7B5AFED0223DD0A500B6168B /* Assets.xcassets */,
 				7B5AFED2223DD0A500B6168B /* LaunchScreen.storyboard */,
 				7B5AFEE9223DD2E600B6168B /* GoogleService-Info.plist */,
 				7B5AFED5223DD0A500B6168B /* Info.plist */,
@@ -430,7 +468,6 @@
 				7B5AFEF6223DE4FD00B6168B /* CurrentPlaylistVC.swift in Sources */,
 				7B5AFEF4223DE4EE00B6168B /* ProfileVC.swift in Sources */,
 				7B5AFF00223DE57400B6168B /* LaunchVC.swift in Sources */,
-				7B5AFECC223DD0A300B6168B /* ViewController.swift in Sources */,
 				7B5AFEF8223DE53200B6168B /* PlaylistsVC.swift in Sources */,
 				7B5AFECA223DD0A300B6168B /* AppDelegate.swift in Sources */,
 			);
