@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		524094C77B7E54EB91B1B297 /* Pods_Ditto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8F77EEC14D69478BDD6B73 /* Pods_Ditto.framework */; };
 		6D07C94E478C6D416799BBAA /* Pods_DittoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDBA1BDEAC3FC82272D3F5CF /* Pods_DittoUITests.framework */; };
+		7B556F4A224E97F80003FA96 /* SignUpVC-uisetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B556F49224E97F80003FA96 /* SignUpVC-uisetup.swift */; };
 		7B5AFECA223DD0A300B6168B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEC9223DD0A300B6168B /* AppDelegate.swift */; };
 		7B5AFECC223DD0A300B6168B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFECB223DD0A300B6168B /* ViewController.swift */; };
 		7B5AFECF223DD0A300B6168B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5AFECD223DD0A300B6168B /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		4E5108E4395F066C8564CC9B /* Pods-Ditto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ditto.debug.xcconfig"; path = "Target Support Files/Pods-Ditto/Pods-Ditto.debug.xcconfig"; sourceTree = "<group>"; };
 		4EEDB7F3A927FB83DCA61667 /* Pods-Ditto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ditto.release.xcconfig"; path = "Target Support Files/Pods-Ditto/Pods-Ditto.release.xcconfig"; sourceTree = "<group>"; };
 		66FF58C1B2B71EAFE1DB239C /* Pods-DittoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DittoUITests.release.xcconfig"; path = "Target Support Files/Pods-DittoUITests/Pods-DittoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7B556F49224E97F80003FA96 /* SignUpVC-uisetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpVC-uisetup.swift"; sourceTree = "<group>"; };
 		7B5AFEC6223DD0A300B6168B /* Ditto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ditto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5AFEC9223DD0A300B6168B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B5AFECB223DD0A300B6168B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				7B5AFEFB223DE55400B6168B /* SignUpVC.swift */,
+				7B556F49224E97F80003FA96 /* SignUpVC-uisetup.swift */,
 			);
 			path = SignUpVC;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 			files = (
 				7B5AFF0C2243567D00B6168B /* ConnectButton.swift in Sources */,
 				7B5AFEFC223DE55400B6168B /* SignUpVC.swift in Sources */,
+				7B556F4A224E97F80003FA96 /* SignUpVC-uisetup.swift in Sources */,
 				7B5AFF04223E00EA00B6168B /* LoginVC-uisetup.swift in Sources */,
 				7B5AFF02223DE77000B6168B /* LaunchVC-uisetup.swift in Sources */,
 				7B5AFEFA223DE54000B6168B /* ConnectVC.swift in Sources */,
