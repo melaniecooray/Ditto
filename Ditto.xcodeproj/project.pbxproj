@@ -116,8 +116,7 @@
 			children = (
 				7B5AFED0223DD0A500B6168B /* Assets.xcassets */,
 			);
-			name = Resources;
-			path = "New Group";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		421D8FF222529347000E5F28 /* Clients */ = {
