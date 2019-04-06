@@ -11,10 +11,12 @@ import UIKit
 class PlaylistsViewController: UIViewController {
     
     var backgroundImage: UIImageView!
+    var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpBackground()
+        setUpTable()
     }
 
 }

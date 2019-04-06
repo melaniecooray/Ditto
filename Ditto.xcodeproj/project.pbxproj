@@ -34,6 +34,8 @@
 		7B5AFF0622434B4400B6168B /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5AFF0522434B4300B6168B /* SpotifyiOS.framework */; };
 		7B5AFF0C2243567D00B6168B /* ConnectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFF0B2243567D00B6168B /* ConnectButton.swift */; };
 		EF9B482522592786008EAA21 /* PlaylistsVC - UISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B482422592786008EAA21 /* PlaylistsVC - UISetup.swift */; };
+		EF9B4827225938AF008EAA21 /* PlaylistsVC - Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B4826225938AF008EAA21 /* PlaylistsVC - Table.swift */; };
+		EF9B48292259394B008EAA21 /* PlaylistViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B48282259394B008EAA21 /* PlaylistViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		8D8F77EEC14D69478BDD6B73 /* Pods_Ditto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ditto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDBA1BDEAC3FC82272D3F5CF /* Pods_DittoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DittoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9B482422592786008EAA21 /* PlaylistsVC - UISetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistsVC - UISetup.swift"; sourceTree = "<group>"; };
+		EF9B4826225938AF008EAA21 /* PlaylistsVC - Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistsVC - Table.swift"; sourceTree = "<group>"; };
+		EF9B48282259394B008EAA21 /* PlaylistViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				423C25CC22545A9A00703008 /* Cell.swift */,
+				EF9B48282259394B008EAA21 /* PlaylistViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 			children = (
 				7B5AFEF7223DE53200B6168B /* PlaylistsVC.swift */,
 				EF9B482422592786008EAA21 /* PlaylistsVC - UISetup.swift */,
+				EF9B4826225938AF008EAA21 /* PlaylistsVC - Table.swift */,
 			);
 			path = PlaylistsVC;
 			sourceTree = "<group>";
@@ -484,11 +490,13 @@
 			files = (
 				423C25CB22545A6C00703008 /* User.swift in Sources */,
 				7B5AFF0C2243567D00B6168B /* ConnectButton.swift in Sources */,
+				EF9B48292259394B008EAA21 /* PlaylistViewCell.swift in Sources */,
 				423C25CF22545AB000703008 /* FirebaseClient.swift in Sources */,
 				7B5AFEFC223DE55400B6168B /* SignUpVC.swift in Sources */,
 				EF9B482522592786008EAA21 /* PlaylistsVC - UISetup.swift in Sources */,
 				7B556F4A224E97F80003FA96 /* SignUpVC - UISetup.swift in Sources */,
 				7B5AFF04223E00EA00B6168B /* LoginVC - UISetup.swift in Sources */,
+				EF9B4827225938AF008EAA21 /* PlaylistsVC - Table.swift in Sources */,
 				7B5AFF02223DE77000B6168B /* LaunchVC - UISetup.swift in Sources */,
 				423C25D42259234300703008 /* ConnectVC - UISetup.swift in Sources */,
 				7B5AFEFA223DE54000B6168B /* ConnectViewController.swift in Sources */,
