@@ -119,6 +119,7 @@ class ConnectViewController: UIViewController, SPTSessionManagerDelegate, SPTApp
         disconnectButton.addTarget(self, action: #selector(didTapDisconnect(_:)), for: .touchUpInside)
         
         updateViewBasedOnConnected()
+        makeButtons()
     }
     
     func update(playerState: SPTAppRemotePlayerState) {

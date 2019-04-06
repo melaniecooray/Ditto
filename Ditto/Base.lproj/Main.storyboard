@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--LoginVC-->
+        <!--Login View Controller-->
         <scene sceneID="uuK-jo-Fbt">
             <objects>
-                <viewController id="VmA-bx-LBv" customClass="LoginVC" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VmA-bx-LBv" customClass="LoginViewController" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o6J-UL-mm2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0st-HB-aR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1887" y="150"/>
+            <point key="canvasLocation" x="1866" y="603"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="qcF-6j-oZe">
@@ -45,12 +45,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m63-3u-iLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2870" y="710"/>
+            <point key="canvasLocation" x="3284" y="1063"/>
         </scene>
-        <!--ConnectVC-->
+        <!--Connect View Controller-->
         <scene sceneID="hni-UN-1f9">
             <objects>
-                <viewController id="djn-eK-hok" customClass="ConnectVC" sceneMemberID="viewController">
+                <viewController id="djn-eK-hok" customClass="ConnectViewController" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wBw-mM-IEJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,7 +58,8 @@
                         <viewLayoutGuide key="safeArea" id="wsg-FH-V6I"/>
                     </view>
                     <connections>
-                        <segue destination="VmA-bx-LBv" kind="show" identifier="toLogin" id="nwF-dV-8wp"/>
+                        <segue destination="UIE-NL-Uri" kind="show" identifier="toTabBar" id="c0J-Xr-F2s"/>
+                        <segue destination="VmA-bx-LBv" kind="show" identifier="toLogin" id="ebl-aY-Xac"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wlz-j7-YuL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -139,6 +140,6 @@
         <image name="profile" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ljJ-Zx-eV8"/>
+        <segue reference="c0J-Xr-F2s"/>
     </inferredMetricsTieBreakers>
 </document>
