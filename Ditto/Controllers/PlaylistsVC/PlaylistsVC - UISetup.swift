@@ -6,7 +6,7 @@
 //  Copyright © 2019 Melanie Cooray. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension PlaylistsViewController {
     
@@ -17,7 +17,6 @@ extension PlaylistsViewController {
         backgroundImage.contentMode = .scaleAspectFill
         backgroundImage.alpha = 0.5
         view.addSubview(backgroundImage)
-        
         
     }
     
