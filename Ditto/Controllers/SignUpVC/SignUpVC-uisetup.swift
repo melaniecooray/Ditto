@@ -1,27 +1,36 @@
 //
-//  LoginVC-uisetup.swift
+//  SingUpVC-uisetup.swift
 //  Ditto
 //
-//  Created by Melanie Cooray on 3/16/19.
+//  Created by Melanie Cooray on 3/29/19.
 //  Copyright © 2019 Melanie Cooray. All rights reserved.
 //
 
 import UIKit
 import SkyFloatingLabelTextField
 
-extension LoginVC {
+extension SignUpVC {
     
     func initUI() {
+        setupNameTextField()
         setupEmailTextField()
-        setupPasswordTextField()
+    }
+    
+    func setupNameTextField() {
+        nameTextField = SkyFloatingLabelTextField(frame: CGRect(x: 30, y: 100, width: view.frame.width - 100, height: 100))
+        nameTextField.placeholder = "Full Name"
+        nameTextField.title = "Full Name"
+        nameTextField.errorColor = UIColor.red
+        nameTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        self.view.addSubview(nameTextField)
     }
     
     func setupEmailTextField() {
-        emailTextField = SkyFloatingLabelTextField(frame: CGRect(x: 30, y: 100, width: view.frame.width - 100, height: 100))
+        emailTextField = SkyFloatingLabelTextField(frame: CGRect(x: 30, y: 200, width: view.frame.width - 100, height: 100))
         emailTextField.placeholder = "Email"
         emailTextField.title = "Email Address"
         emailTextField.errorColor = UIColor.red
-        emailTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        emailTextField.addTarget(self, action: #selector(emailTextFieldDidChange(_:)), for: .editingChanged)
         self.view.addSubview(emailTextField)
     }
     
@@ -30,11 +39,10 @@ extension LoginVC {
         passwordTextField.placeholder = "Password"
         passwordTextField.title = "Password"
         passwordTextField.errorColor = UIColor.red
-        passwordTextField.addTarget(self, action: #selector(passwordTextFieldDidChange(_:)), for: .editingChanged)
-        self.view.addSubview(passwordTextField)
+        passwordTextField.addTarget(self, action: #selector(emailTextFieldDidChange(_:)), for: .editingChanged)
+        self.view.addSubview(emailTextField)
     }
     
-    // This will notify us when something has changed on the textfield
     @objc func textFieldDidChange(_ textfield: UITextField) {
         if let text = textfield.text {
             if let floatingLabelTextField = textfield as? SkyFloatingLabelTextField {
@@ -49,11 +57,11 @@ extension LoginVC {
         }
     }
     
-    @objc func passwordTextFieldDidChange(_ textfield: UITextField) {
+    @objc func emailTextFieldDidChange(_ textfield: UITextField) {
         if let text = textfield.text {
             if let floatingLabelTextField = textfield as? SkyFloatingLabelTextField {
-                if(text.count < 6) {
-                    floatingLabelTextField.errorMessage = "Invalid password"
+                if(text.count < 5 || !text.contains("@")) {
+                    floatingLabelTextField.errorMessage = "Invalid email"
                 }
                 else {
                     // The error message will only disappear when we reset it to nil or empty string
