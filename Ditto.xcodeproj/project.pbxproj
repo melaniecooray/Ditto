@@ -29,7 +29,7 @@
 		7B5AFEFC223DE55400B6168B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEFB223DE55400B6168B /* SignUpVC.swift */; };
 		7B5AFEFE223DE56100B6168B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEFD223DE56100B6168B /* LoginVC.swift */; };
 		7B5AFF00223DE57400B6168B /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEFF223DE57400B6168B /* LaunchVC.swift */; };
-		7B5AFF02223DE77000B6168B /* LaunchV - UISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFF01223DE77000B6168B /* LaunchV - UISetup.swift */; };
+		7B5AFF02223DE77000B6168B /* LaunchVC - UISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFF01223DE77000B6168B /* LaunchVC - UISetup.swift */; };
 		7B5AFF04223E00EA00B6168B /* LoginVC - UISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFF03223E00EA00B6168B /* LoginVC - UISetup.swift */; };
 		7B5AFF0622434B4400B6168B /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5AFF0522434B4300B6168B /* SpotifyiOS.framework */; };
 		7B5AFF0C2243567D00B6168B /* ConnectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFF0B2243567D00B6168B /* ConnectButton.swift */; };
@@ -73,7 +73,7 @@
 		7B5AFEFB223DE55400B6168B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		7B5AFEFD223DE56100B6168B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		7B5AFEFF223DE57400B6168B /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
-		7B5AFF01223DE77000B6168B /* LaunchV - UISetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LaunchV - UISetup.swift"; sourceTree = "<group>"; };
+		7B5AFF01223DE77000B6168B /* LaunchVC - UISetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LaunchVC - UISetup.swift"; sourceTree = "<group>"; };
 		7B5AFF03223E00EA00B6168B /* LoginVC - UISetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVC - UISetup.swift"; sourceTree = "<group>"; };
 		7B5AFF0522434B4300B6168B /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 		7B5AFF0722434E5400B6168B /* Ditto-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ditto-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				7B5AFEFF223DE57400B6168B /* LaunchVC.swift */,
-				7B5AFF01223DE77000B6168B /* LaunchV - UISetup.swift */,
+				7B5AFF01223DE77000B6168B /* LaunchVC - UISetup.swift */,
 			);
 			path = LaunchVC;
 			sourceTree = "<group>";
@@ -485,7 +485,7 @@
 				7B5AFEFC223DE55400B6168B /* SignUpVC.swift in Sources */,
 				7B556F4A224E97F80003FA96 /* SignUpVC - UISetup.swift in Sources */,
 				7B5AFF04223E00EA00B6168B /* LoginVC - UISetup.swift in Sources */,
-				7B5AFF02223DE77000B6168B /* LaunchV - UISetup.swift in Sources */,
+				7B5AFF02223DE77000B6168B /* LaunchVC - UISetup.swift in Sources */,
 				423C25D42259234300703008 /* ConnectVC - UISetup.swift in Sources */,
 				7B5AFEFA223DE54000B6168B /* ConnectVC.swift in Sources */,
 				423C25D222545AC300703008 /* Utils.swift in Sources */,
