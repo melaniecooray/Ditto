@@ -87,7 +87,7 @@
         <!--Current-->
         <scene sceneID="6d2-36-dBz">
             <objects>
-                <viewController id="ZXq-4z-foA" sceneMemberID="viewController">
+                <viewController id="ZXq-4z-foA" customClass="CurrentPlaylistViewController" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ddz-g5-zx8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,7 +103,7 @@
         <!--Profile-->
         <scene sceneID="nJK-Iv-FTP">
             <objects>
-                <viewController id="ZQd-Yo-eaO" sceneMemberID="viewController">
+                <viewController id="ZQd-Yo-eaO" customClass="ProfileViewController" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p1b-Fz-cde">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,7 +119,7 @@
         <!--Playlists-->
         <scene sceneID="poL-lx-yU6">
             <objects>
-                <viewController id="QuI-hc-HCq" sceneMemberID="viewController">
+                <viewController id="QuI-hc-HCq" customClass="PlaylistsViewController" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pb3-YZ-mnQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
