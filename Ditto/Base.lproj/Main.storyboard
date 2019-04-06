@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="1866" y="603"/>
         </scene>
-        <!--Sign UpVC-->
+        <!--Sign Up View Controller-->
         <scene sceneID="qcF-6j-oZe">
             <objects>
-                <viewController id="p8A-R9-1BG" customClass="SignUpVC" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="p8A-R9-1BG" customClass="SignUpViewController" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2j8-nq-0a1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +40,8 @@
                         <viewLayoutGuide key="safeArea" id="caE-HV-7T8"/>
                     </view>
                     <connections>
-                        <segue destination="UIE-NL-Uri" kind="show" id="ljJ-Zx-eV8"/>
+                        <segue destination="UIE-NL-Uri" kind="show" identifier="signedUp" id="ljJ-Zx-eV8"/>
+                        <segue destination="VmA-bx-LBv" kind="show" identifier="backToLogin" id="RAs-ax-LDI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m63-3u-iLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -57,6 +58,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wsg-FH-V6I"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3hN-df-lDM"/>
                     <connections>
                         <segue destination="UIE-NL-Uri" kind="show" identifier="toTabBar" id="c0J-Xr-F2s"/>
                         <segue destination="VmA-bx-LBv" kind="show" identifier="toLogin" id="ebl-aY-Xac"/>
@@ -140,6 +142,7 @@
         <image name="profile" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="c0J-Xr-F2s"/>
+        <segue reference="kMD-M7-tv2"/>
+        <segue reference="RAs-ax-LDI"/>
     </inferredMetricsTieBreakers>
 </document>
