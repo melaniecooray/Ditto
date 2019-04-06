@@ -29,8 +29,14 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        initUI()
-        addTapDismiss()
+        Auth.auth().addStateDidChangeListener { auth, user in
+            if let user = user {
+                self.alreadySignedIn()
+            } else {
+                self.initUI()
+                self.addTapDismiss()
+            }
+        }
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
@@ -108,6 +114,11 @@ class LoginViewController: UIViewController {
         let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(defaultAction)
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    
+    func alreadySignedIn () {
+        //performSegue(withIdentifier: "toFeedVC", sender: self)
     }
 
 }

@@ -9,10 +9,15 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+    
+    var signOutButton: UIButton!
+    
+    var profilePic: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        initUI()
         
     }
     
