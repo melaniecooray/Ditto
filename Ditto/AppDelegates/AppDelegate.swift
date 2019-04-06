@@ -13,20 +13,20 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-//    lazy var rootViewController = ConnectViewController()
+    lazy var rootViewController = ConnectViewController()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        window?.rootViewController = rootViewController
-//        window?.makeKeyAndVisible()
+        //window = UIWindow(frame: UIScreen.main.bounds)
+        //window?.rootViewController = rootViewController
+        window?.makeKeyAndVisible()
         return true
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-//        rootViewController.sessionManager.application(app, open: url, options: options)
+        //rootViewController.sessionManager.application(app, open: url, options: options)
         return true
     }
 

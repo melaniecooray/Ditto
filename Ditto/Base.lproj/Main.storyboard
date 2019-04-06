@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QuI-hc-HCq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="djn-eK-hok">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,28 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--LaunchVC-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="LaunchVC" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <connections>
-                        <segue destination="VmA-bx-LBv" kind="show" identifier="toLogin" id="rwr-7j-bam"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="209" y="125"/>
-        </scene>
-        <!--LoginVC-->
+        <!--Login View Controller-->
         <scene sceneID="uuK-jo-Fbt">
             <objects>
-                <viewController id="VmA-bx-LBv" customClass="LoginVC" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VmA-bx-LBv" customClass="LoginViewController" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o6J-UL-mm2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,7 +27,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0st-HB-aR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1033" y="125"/>
+            <point key="canvasLocation" x="1866" y="603"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="qcF-6j-oZe">
@@ -58,17 +40,17 @@
                         <viewLayoutGuide key="safeArea" id="caE-HV-7T8"/>
                     </view>
                     <connections>
-                        <segue destination="djn-eK-hok" kind="show" identifier="toSpotifyConnect" id="mU9-rU-2vb"/>
+                        <segue destination="UIE-NL-Uri" kind="show" id="ljJ-Zx-eV8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m63-3u-iLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2116" y="624"/>
+            <point key="canvasLocation" x="3284" y="1063"/>
         </scene>
-        <!--ConnectVC-->
+        <!--Connect View Controller-->
         <scene sceneID="hni-UN-1f9">
             <objects>
-                <viewController id="djn-eK-hok" customClass="ConnectVC" sceneMemberID="viewController">
+                <viewController id="djn-eK-hok" customClass="ConnectViewController" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wBw-mM-IEJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,12 +58,13 @@
                         <viewLayoutGuide key="safeArea" id="wsg-FH-V6I"/>
                     </view>
                     <connections>
-                        <segue destination="UIE-NL-Uri" kind="show" identifier="signedUp" id="hc5-bD-tsr"/>
+                        <segue destination="UIE-NL-Uri" kind="show" identifier="toTabBar" id="c0J-Xr-F2s"/>
+                        <segue destination="VmA-bx-LBv" kind="show" identifier="toLogin" id="ebl-aY-Xac"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wlz-j7-YuL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3054" y="624"/>
+            <point key="canvasLocation" x="686" y="150"/>
         </scene>
         <!--Current-->
         <scene sceneID="6d2-36-dBz">
@@ -157,6 +140,6 @@
         <image name="profile" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kMD-M7-tv2"/>
+        <segue reference="c0J-Xr-F2s"/>
     </inferredMetricsTieBreakers>
 </document>

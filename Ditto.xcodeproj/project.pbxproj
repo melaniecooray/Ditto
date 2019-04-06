@@ -25,7 +25,7 @@
 		7B5AFEF4223DE4EE00B6168B /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEF3223DE4EE00B6168B /* ProfileVC.swift */; };
 		7B5AFEF6223DE4FD00B6168B /* CurrentPlaylistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEF5223DE4FD00B6168B /* CurrentPlaylistVC.swift */; };
 		7B5AFEF8223DE53200B6168B /* PlaylistsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEF7223DE53200B6168B /* PlaylistsVC.swift */; };
-		7B5AFEFA223DE54000B6168B /* ConnectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEF9223DE54000B6168B /* ConnectVC.swift */; };
+		7B5AFEFA223DE54000B6168B /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEF9223DE54000B6168B /* ConnectViewController.swift */; };
 		7B5AFEFC223DE55400B6168B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEFB223DE55400B6168B /* SignUpVC.swift */; };
 		7B5AFEFE223DE56100B6168B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEFD223DE56100B6168B /* LoginVC.swift */; };
 		7B5AFF00223DE57400B6168B /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AFEFF223DE57400B6168B /* LaunchVC.swift */; };
@@ -70,7 +70,7 @@
 		7B5AFEF3223DE4EE00B6168B /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		7B5AFEF5223DE4FD00B6168B /* CurrentPlaylistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPlaylistVC.swift; sourceTree = "<group>"; };
 		7B5AFEF7223DE53200B6168B /* PlaylistsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsVC.swift; sourceTree = "<group>"; };
-		7B5AFEF9223DE54000B6168B /* ConnectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectVC.swift; sourceTree = "<group>"; };
+		7B5AFEF9223DE54000B6168B /* ConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
 		7B5AFEFB223DE55400B6168B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		7B5AFEFD223DE56100B6168B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		7B5AFEFF223DE57400B6168B /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
@@ -249,7 +249,7 @@
 		7B5AFEEF223DE49200B6168B /* ConnectVC */ = {
 			isa = PBXGroup;
 			children = (
-				7B5AFEF9223DE54000B6168B /* ConnectVC.swift */,
+				7B5AFEF9223DE54000B6168B /* ConnectViewController.swift */,
 				7B5AFF0B2243567D00B6168B /* ConnectButton.swift */,
 				423C25D32259234300703008 /* ConnectVC - UISetup.swift */,
 			);
@@ -491,7 +491,7 @@
 				7B5AFF04223E00EA00B6168B /* LoginVC - UISetup.swift in Sources */,
 				7B5AFF02223DE77000B6168B /* LaunchVC - UISetup.swift in Sources */,
 				423C25D42259234300703008 /* ConnectVC - UISetup.swift in Sources */,
-				7B5AFEFA223DE54000B6168B /* ConnectVC.swift in Sources */,
+				7B5AFEFA223DE54000B6168B /* ConnectViewController.swift in Sources */,
 				423C25D222545AC300703008 /* Utils.swift in Sources */,
 				7B5AFEFE223DE56100B6168B /* LoginVC.swift in Sources */,
 				423C25C92252E29300703008 /* HexString.swift in Sources */,
