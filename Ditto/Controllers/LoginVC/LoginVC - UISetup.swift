@@ -1,5 +1,5 @@
 //
-//  LoginVC-uisetup.swift
+//  LoginVC - UISetup.swift
 //  Ditto
 //
 //  Created by Melanie Cooray on 3/16/19.
@@ -9,7 +9,7 @@
 import UIKit
 import SkyFloatingLabelTextField
 
-extension LoginVC {
+extension LoginViewController {
     
     func initUI() {
         setupEmailTextField()

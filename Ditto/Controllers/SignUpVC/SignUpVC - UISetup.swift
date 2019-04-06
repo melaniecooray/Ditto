@@ -1,5 +1,5 @@
 //
-//  SingUpVC-uisetup.swift
+//  SingUpVC - UISetup.swift
 //  Ditto
 //
 //  Created by Melanie Cooray on 3/29/19.
@@ -9,7 +9,7 @@
 import UIKit
 import SkyFloatingLabelTextField
 
-extension SignUpVC {
+extension SignUpViewController {
     
     func initUI() {
         setupNameTextField()

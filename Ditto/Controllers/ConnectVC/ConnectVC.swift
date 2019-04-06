@@ -1,5 +1,5 @@
 //
-//  SpotifyConnectVC.swift
+//  ConnectVC.swift
 //  Ditto
 //
 //  Created by Melanie Cooray on 3/16/19.
@@ -8,10 +8,13 @@
 
 import UIKit
 
-class SpotifyConnectVC: UIViewController, SPTSessionManagerDelegate, SPTAppRemoteDelegate, SPTAppRemotePlayerStateDelegate {
+class ConnectViewController: UIViewController, SPTSessionManagerDelegate, SPTAppRemoteDelegate, SPTAppRemotePlayerStateDelegate {
     
     fileprivate let SpotifyClientID = "c5533d8484d548359b9debaf99f66073"
     fileprivate let SpotifyRedirectURI = URL(string: "ditto://returnafterlogin")!
+    
+    var dummyLogButton: UIButton!
+    var dummyProfileButton: UIButton!
     
     lazy var configuration: SPTConfiguration = {
         let configuration = SPTConfiguration(clientID: SpotifyClientID, redirectURL: SpotifyRedirectURI)

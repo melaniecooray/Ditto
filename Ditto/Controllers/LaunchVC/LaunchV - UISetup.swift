@@ -1,5 +1,5 @@
 //
-//  LaunchVC-uisetup.swift
+//  LaunchVC - UISetup.swift
 //  Ditto
 //
 //  Created by Melanie Cooray on 3/16/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension LaunchVC {
+extension LaunchViewController {
     
     func initUI() {
         setupSubtitle()

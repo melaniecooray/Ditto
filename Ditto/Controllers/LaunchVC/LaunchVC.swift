@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LaunchVC: UIViewController {
+class LaunchViewController: UIViewController {
     
     var subtitle : UILabel!
     
