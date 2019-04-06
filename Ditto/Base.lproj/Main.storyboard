@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bsd-G3-Z2z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="djn-eK-hok">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -47,22 +47,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m63-3u-iLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3284" y="1063"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="eDH-hL-cA4">
-            <objects>
-                <navigationController id="Bsd-G3-Z2z" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vV6-KC-2eY">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="djn-eK-hok" kind="relationship" relationship="rootViewController" id="1Na-C4-Jh7"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HFi-7l-gMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-210" y="150"/>
         </scene>
         <!--Connect View Controller-->
         <scene sceneID="hni-UN-1f9">
@@ -158,7 +142,7 @@
         <image name="profile" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ljJ-Zx-eV8"/>
+        <segue reference="kMD-M7-tv2"/>
         <segue reference="RAs-ax-LDI"/>
     </inferredMetricsTieBreakers>
 </document>
