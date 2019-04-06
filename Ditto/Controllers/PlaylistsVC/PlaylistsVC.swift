@@ -9,9 +9,13 @@
 import UIKit
 
 class PlaylistsViewController: UIViewController {
+    
+    var backgroundImage : UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setUpBackground()
 
         
     }
