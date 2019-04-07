@@ -11,7 +11,12 @@ import UIKit
 
 extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return playlists.count
+        print(playlistTitleList.count)
+        return playlistTitleList.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -20,8 +25,14 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
             subview.removeFromSuperview()
         }
         cell.awakeFromNib()
-        cell.playlistName.text = playlists[indexPath[1]]
-        cell.playlistLastPlayed.text = playlists[indexPath[1]]
+        let size = CGSize(width: tableView.frame.width, height: tableView.frame.height/4)
+        cell.initCellFrom(size: size)
+        cell.layoutMargins = UIEdgeInsets.zero
+        cell.playlistName.text = playlistTitleList[indexPath.row]
+        cell.playlistName.adjustsFontSizeToFitWidth = true
+        cell.playlistLastPlayed.text = playlistLastPlayed[indexPath.row]
+        cell.playlistName.font = UIFont(name: "Roboto-Bold", size: 25)
+        cell.playlistLastPlayed.font = UIFont(name: "Roboto-Regular", size: 15)
         return cell
     }
     
