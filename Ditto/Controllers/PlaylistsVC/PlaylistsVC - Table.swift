@@ -8,21 +8,54 @@
 
 import Foundation
 
-extension PlaylistsViewController: UITableViewDelegate, UITableViewDataSource {
+extension PlaylistsViewController: UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        if isSearching {
+            return filteredArray.count
+        } else {
+            return playlistTitleList.count
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell") as! PlaylistViewCell
+        var playlist: String?
+        if isSearching {
+            playlist = filteredArray[indexPath.row]
+        } else {
+            playlist = playlistTitleList[indexPath.row]
+        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as! PlaylistViewCell
         for subview in cell.contentView.subviews {
             subview.removeFromSuperview()
         }
         cell.awakeFromNib()
         let size = CGSize(width: tableView.frame.width, height: view.frame.height/8)
         cell.initCellFrom(size: size)
+        cell.playlistName.text = playlist
+        cell.layoutMargins = UIEdgeInsets.zero
+        cell.playlistLastPlayed.text = playlistLastPlayed[indexPath.row]
+        cell.playlistName.adjustsFontSizeToFitWidth = true
+        cell.playlistName.font = UIFont(name: "SourceSansPro-Bold", size: 25)
+        cell.playlistLastPlayed.font = UIFont(name: "SourceSansPro-Regular", size: 15)
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor.white
+        cell.selectedBackgroundView = backgroundView
         return cell
     }
     
+    
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if mainSearchBar.text == nil || mainSearchBar.text == "" {
+            isSearching = false
+            view.endEditing(true)
+            tableView.reloadData()
+        } else {
+            isSearching = true
+            filteredArray = playlistTitleList.filter({$0.range(of: mainSearchBar.text!, options: .caseInsensitive) != nil})
+            tableView.reloadData()
+        }
+    }
     
 }

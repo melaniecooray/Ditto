@@ -135,11 +135,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="play" width="30" height="30"/>
+        <image name="play" width="300" height="120"/>
         <image name="playlists" width="30" height="30"/>
         <image name="profile" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="c0J-Xr-F2s"/>
+        <segue reference="ljJ-Zx-eV8"/>
     </inferredMetricsTieBreakers>
 </document>
