@@ -43,7 +43,15 @@ class PlaylistsViewController: UIViewController {
         
         mainSearchBar.delegate = self
         mainSearchBar.returnKeyType = UIReturnKeyType.done
-
         
     }
+    
+    @objc func addButtonClicked() {
+        performSegue(withIdentifier: "toNewPlaylist", sender: self)
+    }
+    
+    
+    
 }
+
+

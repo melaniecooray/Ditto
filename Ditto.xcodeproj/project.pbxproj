@@ -48,6 +48,8 @@
 		EF9B4827225938AF008EAA21 /* PlaylistsVC - Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B4826225938AF008EAA21 /* PlaylistsVC - Table.swift */; };
 		EF9B48292259394B008EAA21 /* PlaylistViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B48282259394B008EAA21 /* PlaylistViewCell.swift */; };
 		EF9B482E22599109008EAA21 /* NewPlaylistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B482D22599109008EAA21 /* NewPlaylistVC.swift */; };
+		EF9B48312259990D008EAA21 /* NewPlaylistVC - UISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B48302259990D008EAA21 /* NewPlaylistVC - UISetup.swift */; };
+		EF9B4833225999F3008EAA21 /* NewPlaylistVC - Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B4832225999F3008EAA21 /* NewPlaylistVC - Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,8 @@
 		EF9B4826225938AF008EAA21 /* PlaylistsVC - Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistsVC - Table.swift"; sourceTree = "<group>"; };
 		EF9B48282259394B008EAA21 /* PlaylistViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewCell.swift; sourceTree = "<group>"; };
 		EF9B482D22599109008EAA21 /* NewPlaylistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaylistVC.swift; sourceTree = "<group>"; };
+		EF9B48302259990D008EAA21 /* NewPlaylistVC - UISetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewPlaylistVC - UISetup.swift"; sourceTree = "<group>"; };
+		EF9B4832225999F3008EAA21 /* NewPlaylistVC - Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewPlaylistVC - Image.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +366,8 @@
 			isa = PBXGroup;
 			children = (
 				EF9B482D22599109008EAA21 /* NewPlaylistVC.swift */,
+				EF9B4832225999F3008EAA21 /* NewPlaylistVC - Image.swift */,
+				EF9B48302259990D008EAA21 /* NewPlaylistVC - UISetup.swift */,
 			);
 			path = NewPlaylistVC;
 			sourceTree = "<group>";
@@ -557,6 +563,7 @@
 				EF9B482E22599109008EAA21 /* NewPlaylistVC.swift in Sources */,
 				7B5AFF0C2243567D00B6168B /* ConnectButton.swift in Sources */,
 				EF9B48292259394B008EAA21 /* PlaylistViewCell.swift in Sources */,
+				EF9B48312259990D008EAA21 /* NewPlaylistVC - UISetup.swift in Sources */,
 				423C25E422594ED000703008 /* EnterCodeVC - UISetup.swift in Sources */,
 				423C25CF22545AB000703008 /* FirebaseClient.swift in Sources */,
 				7B5AFEFC223DE55400B6168B /* SignUpVC.swift in Sources */,
@@ -579,6 +586,7 @@
 				423C25CD22545A9A00703008 /* Cell.swift in Sources */,
 				7B5AFEF4223DE4EE00B6168B /* ProfileVC.swift in Sources */,
 				423C25E222594E5C00703008 /* PreviewPlaylistVC.swift in Sources */,
+				EF9B4833225999F3008EAA21 /* NewPlaylistVC - Image.swift in Sources */,
 				7B5AFF00223DE57400B6168B /* LaunchVC.swift in Sources */,
 				7B5AFEF8223DE53200B6168B /* PlaylistsVC.swift in Sources */,
 				7B5AFECA223DD0A300B6168B /* AppDelegate.swift in Sources */,

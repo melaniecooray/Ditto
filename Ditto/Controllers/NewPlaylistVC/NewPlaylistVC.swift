@@ -8,14 +8,31 @@
 
 import UIKit
 
-class NewPlaylistViewController: UIViewController {
+class NewPlaylistViewController: UIViewController, UITextFieldDelegate {
+    
+    var newPlaylistTextField: UITextField!
+    
+    var imageView: UIImageView!
+    var imagePicker: UIButton!
+    
+    var chosenImage: UIImage!
+    
+    var createButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = UIColor(red:0.45, green:0.51, blue:0.77, alpha:1.0)
+        
+        newPlaylistSetUp()
+        setUpImagePicker()
 
         // Do any additional setup after loading the view.
     }
     
+    @objc func createButtonClicked() {
+        performSegue(withIdentifier: "toCreatePlaylist", sender: self)
+    }
 
     /*
     // MARK: - Navigation
