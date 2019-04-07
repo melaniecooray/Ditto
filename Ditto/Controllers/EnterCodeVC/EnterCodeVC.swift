@@ -46,7 +46,13 @@ class EnterCodeViewController: UIViewController, UITextFieldDelegate {
     }
     
     @objc func filter(_ sender: UIButton) {
-        
+        //actually filter here?
+        performSegue(withIdentifier: "toPreview", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let previewVC = segue.destination as! PreviewPlaylistViewController
+        previewVC.code = code
     }
 
     /*
