@@ -8,6 +8,7 @@ target 'Ditto' do
   # Pods for Ditto
   pod 'Firebase/Database'
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
   pod 'SkyFloatingLabelTextField'
   source 'https://github.com/CocoaPods/Specs.git'
   pod 'SpotifyLogin', '~> 0.1'

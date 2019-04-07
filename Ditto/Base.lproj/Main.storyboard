@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="1866" y="603"/>
         </scene>
-        <!--Sign UpVC-->
+        <!--Sign Up View Controller-->
         <scene sceneID="qcF-6j-oZe">
             <objects>
-                <viewController id="p8A-R9-1BG" customClass="SignUpVC" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="p8A-R9-1BG" customClass="SignUpViewController" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2j8-nq-0a1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +40,8 @@
                         <viewLayoutGuide key="safeArea" id="caE-HV-7T8"/>
                     </view>
                     <connections>
-                        <segue destination="UIE-NL-Uri" kind="show" id="ljJ-Zx-eV8"/>
+                        <segue destination="UIE-NL-Uri" kind="show" identifier="signedUp" id="ljJ-Zx-eV8"/>
+                        <segue destination="VmA-bx-LBv" kind="show" identifier="backToLogin" id="RAs-ax-LDI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m63-3u-iLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -57,6 +58,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wsg-FH-V6I"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3hN-df-lDM"/>
                     <connections>
                         <segue destination="UIE-NL-Uri" kind="show" identifier="toTabBar" id="c0J-Xr-F2s"/>
                         <segue destination="VmA-bx-LBv" kind="show" identifier="toLogin" id="ebl-aY-Xac"/>
@@ -67,9 +69,26 @@
             <point key="canvasLocation" x="686" y="150"/>
         </scene>
         <!--Current-->
+        <scene sceneID="HtG-ET-5g3">
+            <objects>
+                <navigationController id="bo8-9f-RRn" customClass="NavBarController" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Current" image="play" id="WvU-jk-v1y"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6jE-q1-A9H">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZXq-4z-foA" kind="relationship" relationship="rootViewController" id="XxU-Mk-p4t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qF3-SS-w5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5102" y="150"/>
+        </scene>
+        <!--Current-->
         <scene sceneID="6d2-36-dBz">
             <objects>
-                <viewController id="ZXq-4z-foA" customClass="CurrentPlaylistViewController" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZXq-4z-foA" customClass="EnterCodeViewController" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ddz-g5-zx8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,10 +96,47 @@
                         <viewLayoutGuide key="safeArea" id="nhG-5v-Es8"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Current" image="play" id="AQD-qJ-VhD"/>
+                    <navigationItem key="navigationItem" id="wTi-N8-Nbo"/>
+                    <connections>
+                        <segue destination="57K-8U-Swn" kind="show" id="8Ee-FD-MzD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KBN-Jl-BOu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5102" y="150"/>
+            <point key="canvasLocation" x="5982" y="150"/>
+        </scene>
+        <!--Preview Playlist View Controller-->
+        <scene sceneID="imT-Cw-SE3">
+            <objects>
+                <viewController id="57K-8U-Swn" customClass="PreviewPlaylistViewController" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oF0-Iq-iIv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="e2d-IY-xpe"/>
+                    </view>
+                    <connections>
+                        <segue destination="jDB-hF-Xkw" kind="presentation" id="Zsg-WU-i85"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ze-0i-jbo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6871" y="155"/>
+        </scene>
+        <!--Current Playlist View Controller-->
+        <scene sceneID="xF2-Gn-oCf">
+            <objects>
+                <viewController id="jDB-hF-Xkw" customClass="CurrentPlaylistViewController" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZBT-AT-ZRM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gD8-CB-jXS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eZ0-xj-Dgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7794" y="154"/>
         </scene>
         <!--Profile-->
         <scene sceneID="nJK-Iv-FTP">
@@ -117,7 +173,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="fhz-Tx-eQe">
             <objects>
-                <tabBarController id="UIE-NL-Uri" sceneMemberID="viewController">
+                <tabBarController id="UIE-NL-Uri" customClass="TabBarController" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qca-bb-gHH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -125,7 +181,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="QuI-hc-HCq" kind="relationship" relationship="viewControllers" id="rvD-ms-8xZ"/>
-                        <segue destination="ZXq-4z-foA" kind="relationship" relationship="viewControllers" id="xJ7-o4-DgJ"/>
+                        <segue destination="bo8-9f-RRn" kind="relationship" relationship="viewControllers" id="tfV-xA-CGF"/>
                         <segue destination="ZQd-Yo-eaO" kind="relationship" relationship="viewControllers" id="c42-dN-PQM"/>
                     </connections>
                 </tabBarController>
@@ -135,11 +191,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="play" width="300" height="120"/>
-        <image name="playlists" width="30" height="30"/>
-        <image name="profile" width="30" height="30"/>
+        <image name="play" width="24" height="24"/>
+        <image name="playlists" width="24" height="24"/>
+        <image name="profile" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ljJ-Zx-eV8"/>
+        <segue reference="kMD-M7-tv2"/>
+        <segue reference="ebl-aY-Xac"/>
     </inferredMetricsTieBreakers>
 </document>
