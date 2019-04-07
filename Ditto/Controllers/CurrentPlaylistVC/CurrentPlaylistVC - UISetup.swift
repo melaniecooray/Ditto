@@ -13,16 +13,18 @@ extension CurrentPlaylistViewController {
     func initUI() {
         setupCode()
         setupPlaylistName()
+        setupSongImage()
         setupControl()
     }
     
     func setupCode() {
-        codeLabel = UILabel(frame: CGRect(x: 50, y: 50, width: view.frame.width/2, height: 100))
+        codeLabel = UILabel(frame: CGRect(x: 50, y: 50, width: view.frame.width - 100, height: 50))
         codeLabel.text = "CODE: 67J91U"
         codeLabel.font = UIFont(name: "Roboto-Bold", size: 30)
         codeLabel.textColor = UIColor(hexString: "7383C5")
         codeLabel.layer.borderColor = UIColor.black.cgColor
         codeLabel.layer.borderWidth = CGFloat(2.0)
+        codeLabel.textAlignment = .center
         view.addSubview(codeLabel)
     }
     
@@ -32,7 +34,15 @@ extension CurrentPlaylistViewController {
         playlistName.text = "Playlist: vibe station"
         playlistName.font = UIFont(name: "Roboto-Bold", size: 15)
         playlistName.textColor = UIColor(hexString: "7383C5")
+        playlistName.textAlignment = .center
         view.addSubview(playlistName)
+    }
+    
+    func setupSongImage() {
+        songImage = UIImageView(frame: CGRect(x: 0, y: 0, width: view.frame.width/2 - 50, height: view.frame.width/2 - 50))
+        songImage.center = CGPoint(x: view.frame.width/2, y: 220)
+        songImage.image = UIImage(named: "blacksquare")
+        view.addSubview(songImage)
     }
     
     func setupControl() {
