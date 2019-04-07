@@ -10,17 +10,17 @@ import UIKit
 
 extension ConnectViewController {
     func makeButtons() {
-        dummyLogButton = UIButton(frame: CGRect(x: view.frame.width/6, y: view.frame.height/10, width: view.frame.width/4, height: view.frame.height/9))
+        dummyLogButton = UIButton(frame: CGRect(x: view.frame.width/6, y: view.frame.height/15, width: view.frame.width/4, height: view.frame.height/20))
         dummyLogButton.setTitle("To Login", for: .normal)
         dummyLogButton.layer.cornerRadius = 5.0
-        dummyLogButton.backgroundColor = .red
+        dummyLogButton.backgroundColor = .gray
         dummyLogButton.addTarget(self, action: #selector(toLogin), for: .touchUpInside)
         view.addSubview(dummyLogButton)
         
-        dummyProfileButton = UIButton(frame: CGRect(x: view.frame.width * 4/6, y: view.frame.height/10, width: view.frame.width/4, height: view.frame.height/9))
+        dummyProfileButton = UIButton(frame: CGRect(x: view.frame.width * 4/6, y: view.frame.height/15, width: view.frame.width/4, height: view.frame.height/20))
         dummyProfileButton.setTitle("To Profile", for: .normal)
         dummyProfileButton.layer.cornerRadius = 5.0
-        dummyProfileButton.backgroundColor = .red
+        dummyProfileButton.backgroundColor = .gray
         dummyProfileButton.addTarget(self, action: #selector(toTabBar), for: .touchUpInside)
         view.addSubview(dummyProfileButton)
         print("adding dummy buttons")

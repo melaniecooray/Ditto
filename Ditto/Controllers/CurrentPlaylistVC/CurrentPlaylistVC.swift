@@ -9,11 +9,15 @@
 import UIKit
 
 class CurrentPlaylistViewController: UIViewController {
+    
+    var customSC: UISegmentedControl!
+    var codeLabel: UILabel!
+    var playlistName: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        initUI()
     }
     
 }

@@ -31,8 +31,9 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         cell.playlistName.text = playlistTitleList[indexPath.row]
         cell.playlistName.adjustsFontSizeToFitWidth = true
         cell.playlistLastPlayed.text = playlistLastPlayed[indexPath.row]
-        cell.playlistName.font = UIFont(name: "Roboto-Bold", size: 25)
-        cell.playlistLastPlayed.font = UIFont(name: "Roboto-Regular", size: 15)
+        cell.playlistName.font = UIFont(name: "Roboto-Bold", size: 15)
+        cell.playlistLastPlayed.font = UIFont(name: "Roboto-Regular", size: 12)
+        cell.playlistLastPlayed.textColor = UIColor(hexString: "7383C5")
         return cell
     }
     

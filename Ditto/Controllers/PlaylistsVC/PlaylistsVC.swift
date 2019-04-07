@@ -44,6 +44,7 @@ class PlaylistsViewController: UIViewController {
         mainSearchBar.delegate = self
         mainSearchBar.returnKeyType = UIReturnKeyType.done
 
+
         
     }
 }
