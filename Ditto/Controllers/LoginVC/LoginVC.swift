@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     
     var scrollView: UIScrollView!
     
-    var code: SkyFloatingLabelTextField!
+    var code: UITextField!
     var joinButton: UIButton!
     
     var logo: UIImageView!
@@ -56,7 +56,7 @@ class LoginViewController: UIViewController {
     @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y == 0 {
-                if !code.editingOrSelected {
+                if !code.isEditing {
                     self.view.frame.origin.y -= 200
                 }
             }
