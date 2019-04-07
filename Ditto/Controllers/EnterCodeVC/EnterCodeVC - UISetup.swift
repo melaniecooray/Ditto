@@ -9,9 +9,16 @@
 import UIKit
 
 extension EnterCodeViewController {
+    func setUpBackground() {
+        backgroundImage = UIImageView(frame: view.frame)
+        backgroundImage.image = UIImage(named: "codePic")
+        backgroundImage.contentMode = .scaleAspectFill
+        view.addSubview(backgroundImage)
+    }
+    
     func setUpLabels() {
         tagLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width * 2/3, height: view.frame.height/10))
-        tagLabel.center = CGPoint(x: view.frame.width/2, y: view.frame.height * 3/10)
+        tagLabel.center = CGPoint(x: view.frame.width/2, y: view.frame.height * 2/5)
         tagLabel.textAlignment = .center
         tagLabel.text = "find a playlist"
         tagLabel.font = UIFont(name: "Roboto-Light", size: 30)
@@ -20,7 +27,7 @@ extension EnterCodeViewController {
     
     func setUpInteractive() {
         codeInput = UITextField(frame: CGRect(x: 0, y: 0, width: view.frame.width * 3/5, height: view.frame.height/11))
-        codeInput.center = CGPoint(x: view.frame.width * 0.42, y: view.frame.height * 2/5)
+        codeInput.center = CGPoint(x: view.frame.width * 0.42, y: view.frame.height * 1/2)
         codeInput.font = UIFont(name: "Roboto-Bold", size: 28)
         codeInput.textAlignment = .center
         codeInput.textColor = UIColor(hexString: "#BF95DC")

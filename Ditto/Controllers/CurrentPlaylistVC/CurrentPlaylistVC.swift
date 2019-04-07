@@ -10,6 +10,8 @@ import UIKit
 
 class CurrentPlaylistViewController: UIViewController {
 
+    var code: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

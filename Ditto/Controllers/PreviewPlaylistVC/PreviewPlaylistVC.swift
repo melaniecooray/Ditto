@@ -12,17 +12,28 @@ import UIKit
 class PreviewPlaylistViewController: UIViewController {
     
     var code: String!
+    
     var colorBlock: UIView!
+    var playButton: UIButton!
     
     var nameLabel: UILabel!
     var codeLabel: UILabel!
+    var numberLabel: UILabel!
     var liveLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setUpBackground()
+        setUpLabels()
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func toPlaylist(_ sender: UIButton) {
+        performSegue(withIdentifier: "toPlaylist", sender: self)
+        //let currentVC = CurrentPlaylistViewController()
+        //currentVC.code = code
+        //present(currentVC, animated: true, completion: nil)
     }
     
 
