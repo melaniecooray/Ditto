@@ -13,6 +13,8 @@ class CurrentPlaylistViewController: UIViewController {
     var customSC: UISegmentedControl!
     var codeLabel: UILabel!
     var playlistName: UILabel!
+    
+    var songImage: UIImageView!
 
     var code: String!
     
