@@ -64,6 +64,7 @@ extension ProfileViewController {
         tableView.register(PlaylistViewCell.self, forCellReuseIdentifier: "PlaylistCell")
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.separatorStyle = .none
         tableView.backgroundColor = UIColor.clear
         tableView.layoutMargins = UIEdgeInsets.zero
         tableView.separatorInset = UIEdgeInsets.zero
