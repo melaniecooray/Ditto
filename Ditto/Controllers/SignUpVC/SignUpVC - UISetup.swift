@@ -32,6 +32,7 @@ extension SignUpViewController {
         nameTextField = SkyFloatingLabelTextField(frame: CGRect(x: 50, y: logo.frame.maxY - 50, width: view.frame.width - 100, height: 70))
         nameTextField.placeholder = "Full Name"
         nameTextField.title = "Full Name"
+        nameTextField.font = UIFont(name: "Roboto-Light", size: 25)
         nameTextField.errorColor = UIColor.red
         nameTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         view.addSubview(nameTextField)
@@ -41,6 +42,7 @@ extension SignUpViewController {
         emailTextField = SkyFloatingLabelTextField(frame: CGRect(x: 50, y: nameTextField.frame.maxY + 10, width: view.frame.width - 100, height: 70))
         emailTextField.placeholder = "Email"
         emailTextField.title = "Email Address"
+        emailTextField.font = UIFont(name: "Roboto-Light", size: 25)
         emailTextField.errorColor = UIColor.red
         emailTextField.addTarget(self, action: #selector(emailTextFieldDidChange(_:)), for: .editingChanged)
         view.addSubview(emailTextField)
@@ -50,6 +52,7 @@ extension SignUpViewController {
         passwordTextField = SkyFloatingLabelTextField(frame: CGRect(x: 50, y: emailTextField.frame.maxY + 10, width: view.frame.width - 100, height: 70))
         passwordTextField.placeholder = "Password"
         passwordTextField.title = "Password"
+        passwordTextField.font = UIFont(name: "Roboto-Light", size: 25)
         passwordTextField.errorColor = UIColor.red
         passwordTextField.addTarget(self, action: #selector(passwordTextFieldDidChange(_:)), for: .editingChanged)
         view.addSubview(passwordTextField)
@@ -57,8 +60,9 @@ extension SignUpViewController {
     
     func setupSignUpButton() {
         signUpButton = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.width/2, height: 50))
-        signUpButton.center = CGPoint(x: view.frame.width/2, y: passwordTextField.frame.maxY + 50)
+        signUpButton.center = CGPoint(x: view.frame.width/2, y: passwordTextField.frame.maxY + 80)
         signUpButton.setTitle("Login", for: .normal)
+        signUpButton.titleLabel?.font = UIFont(name: "Roboto-Regular", size: 25)
         signUpButton.layer.cornerRadius = 10
         signUpButton.backgroundColor = UIColor(hexString: "7383C5")
         signUpButton.addTarget(self, action: #selector(signUp), for: .touchUpInside)
@@ -67,11 +71,13 @@ extension SignUpViewController {
     
     func setupLogin() {
         loginText = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width/2, height: 50))
-        loginText.center = CGPoint(x: view.frame.width/2 - 30, y: signUpButton.frame.maxY + 50)
+        loginText.center = CGPoint(x: view.frame.width/2 - 10, y: signUpButton.frame.maxY + 30)
         loginText.text = "Already have an account?"
+        loginText.font = UIFont(name: "Roboto-Regular", size: 15)
         view.addSubview(loginText)
-        loginButton = UIButton(frame: CGRect(x: view.frame.width/2, y: loginText.frame.minY, width: 200, height: 50))
+        loginButton = UIButton(frame: CGRect(x: view.frame.width/2 - 10, y: loginText.frame.minY, width: 200, height: 50))
         loginButton.setTitle("Login!", for: .normal)
+        loginButton.titleLabel?.font = UIFont(name: "Roboto-Regular", size: 15)
         loginButton.setTitleColor(UIColor(hexString: "7383C5"), for: .normal)
         loginButton.addTarget(self, action: #selector(toLogin), for: .touchUpInside)
         view.addSubview(loginButton)

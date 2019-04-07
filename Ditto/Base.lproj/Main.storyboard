@@ -98,7 +98,7 @@
                     <tabBarItem key="tabBarItem" title="Current" image="play" id="AQD-qJ-VhD"/>
                     <navigationItem key="navigationItem" id="wTi-N8-Nbo"/>
                     <connections>
-                        <segue destination="57K-8U-Swn" kind="show" id="8Ee-FD-MzD"/>
+                        <segue destination="57K-8U-Swn" kind="show" identifier="toPreview" id="8Ee-FD-MzD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KBN-Jl-BOu" userLabel="First Responder" sceneMemberID="firstResponder"/>

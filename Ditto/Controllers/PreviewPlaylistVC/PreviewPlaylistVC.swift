@@ -10,6 +10,8 @@
 import UIKit
 
 class PreviewPlaylistViewController: UIViewController {
+    
+    var code: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
