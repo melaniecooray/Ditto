@@ -13,10 +13,12 @@ class NavBarController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationBar.isTranslucent = false
+        self.navigationBar.isTranslucent = true
         self.navigationBar.setValue(true, forKey: "hidesShadow")
-        self.navigationBar.barTintColor = .white
+        self.navigationBar.barTintColor = .clear
         self.navigationBar.tintColor = .white
+        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationBar.shadowImage = UIImage()
         UIBarButtonItem.appearance()
             .setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Roboto-Regular", size: 14.0)!], for: .normal)
 

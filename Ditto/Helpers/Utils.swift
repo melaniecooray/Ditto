@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class Utils {
+    static func space(text: String) -> String {
+        var new = ""
+        for char in text {
+            new = new + " " + String(char)
+        }
+        return new
+    }
+}

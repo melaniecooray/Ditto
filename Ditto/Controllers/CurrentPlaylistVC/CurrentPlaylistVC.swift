@@ -14,6 +14,8 @@ class CurrentPlaylistViewController: UIViewController {
     var codeLabel: UILabel!
     var playlistName: UILabel!
 
+    var code: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
