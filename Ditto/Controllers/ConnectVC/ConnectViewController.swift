@@ -46,6 +46,8 @@ class ConnectViewController: UIViewController, SPTSessionManagerDelegate, SPTApp
     fileprivate lazy var connectLabel: UILabel = {
         let label = UILabel()
         label.text = "Connect your Spotify account"
+        label.font = UIFont(name: "Roboto-Bold", size: 20)
+        label.textColor = UIColor(hexString: "7383C5")
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -117,6 +119,9 @@ class ConnectViewController: UIViewController, SPTSessionManagerDelegate, SPTApp
         
         connectButton.addTarget(self, action: #selector(didTapConnect(_:)), for: .touchUpInside)
         disconnectButton.addTarget(self, action: #selector(didTapDisconnect(_:)), for: .touchUpInside)
+        connectButton.setImage(UIImage(named: "spotify"), for: .normal)
+        connectButton.setTitle("", for: .normal)
+        connectButton.backgroundColor = .clear
         
         updateViewBasedOnConnected()
         makeButtons()
@@ -218,11 +223,13 @@ class ConnectViewController: UIViewController, SPTSessionManagerDelegate, SPTApp
     
     func sessionManager(manager: SPTSessionManager, didInitiate session: SPTSession) {
         appRemote.connectionParameters.accessToken = session.accessToken
+        print("connecting")
         appRemote.connect()
     }
     
     // MARK: - SPTAppRemoteDelegate
     func appRemoteDidEstablishConnection(_ appRemote: SPTAppRemote) {
+        print("connected")
         updateViewBasedOnConnected()
         appRemote.playerAPI?.delegate = self
         appRemote.playerAPI?.subscribe(toPlayerState: { (success, error) in

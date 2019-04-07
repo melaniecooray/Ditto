@@ -15,6 +15,7 @@ extension ProfileViewController {
         setupProfilePic()
         setupName()
         setupControl()
+        setupTable()
     }
     
     func setupSignOutButton() {
@@ -59,11 +60,16 @@ extension ProfileViewController {
     }
     
     func setupTable() {
-        tableView = UITableView(frame: CGRect(x: 0, y: customSC.frame.maxY + 15, width: view.frame.width, height: 400))
+        tableView = UITableView(frame: CGRect(x: 0, y: customSC.frame.maxY, width: view.frame.width, height: view.frame.maxY - customSC.frame.maxY))
         tableView.register(PlaylistViewCell.self, forCellReuseIdentifier: "PlaylistCell")
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.backgroundColor = .white
+        tableView.backgroundColor = UIColor.clear
+        tableView.layoutMargins = UIEdgeInsets.zero
+        tableView.separatorInset = UIEdgeInsets.zero
+        tableView.rowHeight = view.frame.height/8
+        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: view.frame.height/8, right: 0)
+        tableView.separatorColor = UIColor.gray
         view.addSubview(tableView)
     }
     
