@@ -46,6 +46,10 @@ class PlaylistsViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     @objc func addButtonClicked() {
         performSegue(withIdentifier: "toNewPlaylist", sender: self)
     }

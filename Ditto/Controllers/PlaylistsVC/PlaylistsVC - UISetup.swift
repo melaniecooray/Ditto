@@ -23,7 +23,7 @@ extension PlaylistsViewController {
         addButton = UIButton(frame: CGRect(x: view.frame.width - view.frame.width / 7, y: view.frame.height / 12, width: view.frame.width / 12, height: view.frame.width / 12))
         let image = UIImage(named: "plus")
         addButton.setImage(image, for: .normal)
-        //addButton.addTarget(self, action: #selector(addButtonClicked), for: .touchUpInside)
+        addButton.addTarget(self, action: #selector(addButtonClicked), for: .touchUpInside)
         view.addSubview(addButton)
     }
     
