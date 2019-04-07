@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     
     var scrollView: UIScrollView!
     
-    var code: SkyFloatingLabelTextField!
+    var code: UITextField!
     var joinButton: UIButton!
     
     var logo: UIImageView!
@@ -31,12 +31,15 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         Auth.auth().addStateDidChangeListener { auth, user in
             if let user = user {
+                print("logged in")
                 self.alreadySignedIn()
             } else {
                 self.initUI()
                 self.addTapDismiss()
             }
         }
+        initUI()
+        addTapDismiss()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
@@ -53,7 +56,7 @@ class LoginViewController: UIViewController {
     @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y == 0 {
-                if !code.editingOrSelected {
+                if !code.isEditing {
                     self.view.frame.origin.y -= 200
                 }
             }
@@ -117,8 +120,8 @@ class LoginViewController: UIViewController {
     }
     
     
-    func alreadySignedIn () {
-        //performSegue(withIdentifier: "toFeedVC", sender: self)
+    func alreadySignedIn() {
+        performSegue(withIdentifier: "loggedIn", sender: self)
     }
 
 }
