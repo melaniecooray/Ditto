@@ -37,9 +37,9 @@ class PlaylistViewCell: UITableViewCell {
         //playlistName.text = "vibe station"
         contentView.addSubview(playlistName)
         
-        playlistLastPlayed = UILabel(frame: CGRect(x: playlistPhoto.frame.maxX * 3/4.5, y: playlistName.frame.minY * 2.4, width: size.width/3, height: size.height/3))
+        playlistLastPlayed = UILabel(frame: CGRect(x: playlistPhoto.frame.maxX * 3/4.5, y: playlistName.frame.minY * 2.5, width: size.width/3, height: size.height/3))
         //playlistLastPlayed.center = CGPoint(x: playlistPhoto.frame.maxX + 18, y: size.height * 2/3)
-        playlistLastPlayed.font = UIFont(name: "SourceSansPro-Regular", size: 15)
+        playlistLastPlayed.font = UIFont(name: "Roboto-Light", size: 15)
         playlistLastPlayed.layer.masksToBounds = true
         playlistLastPlayed.text = "last played: 17h"
         playlistLastPlayed.layer.cornerRadius = 8

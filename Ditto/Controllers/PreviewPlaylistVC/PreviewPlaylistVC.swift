@@ -12,10 +12,16 @@ import UIKit
 class PreviewPlaylistViewController: UIViewController {
     
     var code: String!
+    var colorBlock: UIView!
+    
+    var nameLabel: UILabel!
+    var codeLabel: UILabel!
+    var liveLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setUpBackground()
         // Do any additional setup after loading the view.
     }
     

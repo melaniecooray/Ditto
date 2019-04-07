@@ -27,7 +27,7 @@ extension EnterCodeViewController {
         codeInput.layer.borderWidth = 2.0
         codeInput.layer.borderColor = UIColor(hexString: "#BF95DC").cgColor
         codeInput.layer.cornerRadius = 7.0
-        codeInput.keyboardType = UIKeyboardType.numberPad
+        //codeInput.keyboardType = UIKeyboardType.numberPad
         codeInput.addTarget(self, action: #selector(codeEntered), for: .allEditingEvents)
         codeInput.attributedPlaceholder = NSAttributedString(string: "PLAYLIST CODE",
                                                              attributes: [NSAttributedString.Key.foregroundColor: UIColor(hexString: "#BF95DC")])
@@ -35,7 +35,7 @@ extension EnterCodeViewController {
         
         searchButton = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.width/3, height: view.frame.height/18))
         searchButton.center = CGPoint(x: (codeInput.frame.maxX + view.frame.width)/2, y: codeInput.frame.midY)
-        searchButton.setImage(UIImage(named: "arrow"), for: .normal)
+        searchButton.setImage(UIImage(named: "send"), for: .normal)
         searchButton.imageView?.contentMode = .scaleAspectFit
         searchButton.addTarget(self, action: #selector(filter), for: .touchUpInside)
         view.addSubview(searchButton)
