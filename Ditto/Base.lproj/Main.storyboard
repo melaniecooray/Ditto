@@ -116,7 +116,7 @@
                         <viewLayoutGuide key="safeArea" id="e2d-IY-xpe"/>
                     </view>
                     <connections>
-                        <segue destination="jDB-hF-Xkw" kind="presentation" id="Zsg-WU-i85"/>
+                        <segue destination="jDB-hF-Xkw" kind="show" identifier="toPlaylist" id="Zsg-WU-i85"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ze-0i-jbo" userLabel="First Responder" sceneMemberID="firstResponder"/>
