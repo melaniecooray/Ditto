@@ -36,8 +36,9 @@ extension PlaylistsViewController: UITableViewDelegate, UITableViewDataSource, U
         cell.layoutMargins = UIEdgeInsets.zero
         cell.playlistLastPlayed.text = playlistLastPlayed[indexPath.row]
         cell.playlistName.adjustsFontSizeToFitWidth = true
-        cell.playlistName.font = UIFont(name: "SourceSansPro-Bold", size: 25)
-        cell.playlistLastPlayed.font = UIFont(name: "SourceSansPro-Regular", size: 15)
+        cell.playlistName.font = UIFont(name: "Roboto-Bold", size: 15)
+        cell.playlistLastPlayed.font = UIFont(name: "Roboto-Regular", size: 12)
+        cell.playlistLastPlayed.textColor = UIColor(hexString: "7383C5")
         let backgroundView = UIView()
         backgroundView.backgroundColor = UIColor.white
         cell.selectedBackgroundView = backgroundView
