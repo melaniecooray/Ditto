@@ -26,6 +26,11 @@ class NewPlaylistViewController: UIViewController, UITextFieldDelegate {
         
         newPlaylistSetUp()
         setUpImagePicker()
+        self.navigationController?.navigationBar.isHidden = false
+        //self.navigationController?.navigationBar.barTintColor = UIColor(red:0.45, green:0.51, blue:0.77, alpha:1.0)
+        //self.navigationController?.navigationItem.leftBarButtonItem?.tintColor = .black
+        //self.navigationController?.navigationBar.isTranslucent = true
+        //self.navigationController?.view.backgroundColor = UIColor(red:0.45, green:0.51, blue:0.77, alpha:1.0)
 
         // Do any additional setup after loading the view.
     }
