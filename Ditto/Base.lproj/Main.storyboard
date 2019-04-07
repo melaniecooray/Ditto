@@ -166,7 +166,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Playlists" image="playlists" id="A7o-QP-Ssm"/>
                     <connections>
-                        <segue destination="7LV-Mn-kuf" kind="presentation" id="iXe-hP-RSQ"/>
+                        <segue destination="7LV-Mn-kuf" kind="show" identifier="toNewPlaylist" id="p8t-bG-2u5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AvD-Xc-CHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -183,6 +183,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IIR-bm-w1d"/>
                     </view>
+                    <connections>
+                        <segue destination="ZXq-4z-foA" kind="show" identifier="toCreatePlaylist" id="B12-Qj-y7g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="As2-66-L8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -215,6 +218,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ljJ-Zx-eV8"/>
+        <segue reference="B12-Qj-y7g"/>
         <segue reference="ebl-aY-Xac"/>
     </inferredMetricsTieBreakers>
 </document>
