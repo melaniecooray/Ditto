@@ -47,6 +47,7 @@
 		EF9B482522592786008EAA21 /* PlaylistsVC - UISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B482422592786008EAA21 /* PlaylistsVC - UISetup.swift */; };
 		EF9B4827225938AF008EAA21 /* PlaylistsVC - Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B4826225938AF008EAA21 /* PlaylistsVC - Table.swift */; };
 		EF9B48292259394B008EAA21 /* PlaylistViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B48282259394B008EAA21 /* PlaylistViewCell.swift */; };
+		EF9B482E22599109008EAA21 /* NewPlaylistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B482D22599109008EAA21 /* NewPlaylistVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		EF9B482422592786008EAA21 /* PlaylistsVC - UISetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistsVC - UISetup.swift"; sourceTree = "<group>"; };
 		EF9B4826225938AF008EAA21 /* PlaylistsVC - Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistsVC - Table.swift"; sourceTree = "<group>"; };
 		EF9B48282259394B008EAA21 /* PlaylistViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewCell.swift; sourceTree = "<group>"; };
+		EF9B482D22599109008EAA21 /* NewPlaylistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaylistVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +262,7 @@
 				423C25DD22594DFE00703008 /* EnterCodeVC */,
 				7B5AFEF2223DE4D100B6168B /* ProfileVC */,
 				7B5AFEF1223DE4C200B6168B /* CurrentPlaylistVC */,
+				EF9B482C225990D3008EAA21 /* NewPlaylistVC */,
 				7B5AFEF0223DE49E00B6168B /* PlaylistsVC */,
 				7B5AFEEF223DE49200B6168B /* ConnectVC */,
 				7B5AFEEE223DE48B00B6168B /* SignUpVC */,
@@ -353,6 +356,14 @@
 				66FF58C1B2B71EAFE1DB239C /* Pods-DittoUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF9B482C225990D3008EAA21 /* NewPlaylistVC */ = {
+			isa = PBXGroup;
+			children = (
+				EF9B482D22599109008EAA21 /* NewPlaylistVC.swift */,
+			);
+			path = NewPlaylistVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -543,6 +554,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				423C25CB22545A6C00703008 /* User.swift in Sources */,
+				EF9B482E22599109008EAA21 /* NewPlaylistVC.swift in Sources */,
 				7B5AFF0C2243567D00B6168B /* ConnectButton.swift in Sources */,
 				EF9B48292259394B008EAA21 /* PlaylistViewCell.swift in Sources */,
 				423C25E422594ED000703008 /* EnterCodeVC - UISetup.swift in Sources */,
