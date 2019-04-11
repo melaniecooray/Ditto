@@ -51,6 +51,7 @@
 		EF9B482E22599109008EAA21 /* NewPlaylistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B482D22599109008EAA21 /* NewPlaylistVC.swift */; };
 		EF9B48312259990D008EAA21 /* NewPlaylistVC - UISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B48302259990D008EAA21 /* NewPlaylistVC - UISetup.swift */; };
 		EF9B4833225999F3008EAA21 /* NewPlaylistVC - Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B4832225999F3008EAA21 /* NewPlaylistVC - Image.swift */; };
+		EFF7237D225DAE1600115052 /* SpotifyConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF7237C225DAE1600115052 /* SpotifyConnectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		EF9B482D22599109008EAA21 /* NewPlaylistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaylistVC.swift; sourceTree = "<group>"; };
 		EF9B48302259990D008EAA21 /* NewPlaylistVC - UISetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewPlaylistVC - UISetup.swift"; sourceTree = "<group>"; };
 		EF9B4832225999F3008EAA21 /* NewPlaylistVC - Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewPlaylistVC - Image.swift"; sourceTree = "<group>"; };
+		EFF7237C225DAE1600115052 /* SpotifyConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpotifyConnectViewController.swift; path = Ditto/Controllers/SpotifyConnectViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				423C25CE22545AB000703008 /* FirebaseClient.swift */,
+				EFF7237C225DAE1600115052 /* SpotifyConnectViewController.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -572,6 +575,7 @@
 				7B5AFEFC223DE55400B6168B /* SignUpVC.swift in Sources */,
 				EF9B482522592786008EAA21 /* PlaylistsVC - UISetup.swift in Sources */,
 				7B556F4A224E97F80003FA96 /* SignUpVC - UISetup.swift in Sources */,
+				EFF7237D225DAE1600115052 /* SpotifyConnectViewController.swift in Sources */,
 				7B77C04922596F1900674712 /* ProfileVC - Table.swift in Sources */,
 				423C25E022594E4900703008 /* EnterCodeVC.swift in Sources */,
 				7B5AFF04223E00EA00B6168B /* LoginVC - UISetup.swift in Sources */,

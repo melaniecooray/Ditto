@@ -24,8 +24,8 @@ class ConnectViewController: UIViewController, SPTSessionManagerDelegate, SPTApp
         
         // Set these url's to your backend which contains the secret to exchange for an access token
         // You can use the provided ruby script spotify_token_swap.rb for testing purposes
-        configuration.tokenSwapURL = URL(string: "http://localhost:1234/swap")
-        configuration.tokenRefreshURL = URL(string: "http://localhost:1234/refresh")
+        configuration.tokenSwapURL = URL(string: "https://spotify-token-swap.glitch.me/api/token")
+        configuration.tokenRefreshURL = URL(string: "https://spotify-token-swap.glitch.me/api/refresh_token")
         return configuration
     }()
     
