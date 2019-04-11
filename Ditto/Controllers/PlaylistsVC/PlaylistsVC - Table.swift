@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension PlaylistsViewController: UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
