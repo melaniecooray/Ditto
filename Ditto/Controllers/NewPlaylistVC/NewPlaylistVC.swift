@@ -27,26 +27,23 @@ class NewPlaylistViewController: UIViewController, UITextFieldDelegate {
         newPlaylistSetUp()
         setUpImagePicker()
         self.navigationController?.navigationBar.isHidden = false
+        addTapDismiss()
         //self.navigationController?.navigationBar.barTintColor = UIColor(red:0.45, green:0.51, blue:0.77, alpha:1.0)
         //self.navigationController?.navigationItem.leftBarButtonItem?.tintColor = .black
         //self.navigationController?.navigationBar.isTranslucent = true
         //self.navigationController?.view.backgroundColor = UIColor(red:0.45, green:0.51, blue:0.77, alpha:1.0)
 
-        // Do any additional setup after loading the view.
+        // Do any additional f setup after loading the view.
     }
     
     @objc func createButtonClicked() {
         performSegue(withIdentifier: "toCreatePlaylist", sender: self)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func addTapDismiss() {
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard)))
     }
-    */
-
+    @objc func dismissKeyboard() {
+        newPlaylistTextField.resignFirstResponder()
+    }
 }

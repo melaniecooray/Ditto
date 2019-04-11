@@ -10,45 +10,22 @@ import UIKit
 import Firebase
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, SPTSessionManagerDelegate {
-    
-    func sessionManager(manager: SPTSessionManager, didInitiate session: SPTSession) {
-        print("success", session)
-    }
-    
-    func sessionManager(manager: SPTSessionManager, didFailWith error: Error) {
-        print("fail", error)
-    }
-    
-    func sessionManager(manager: SPTSessionManager, didRenew session: SPTSession) {
-        print("renewed", session)
-    }
+class AppDelegate: UIResponder, UIApplicationDelegate{
     
     
     var window: UIWindow?
-    lazy var rootViewController = ConnectViewController()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         FirebaseApp.configure()
-        //window = UIWindow(frame: UIScreen.main.bounds)
-        //window?.rootViewController = rootViewController
-        window?.makeKeyAndVisible()
-        return true
-    }
-    
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        //rootViewController.sessionManager.application(app, open: url, options: options)
+        setupSpotify()
         return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
-//        if (rootViewController.appRemote.isConnected) {
-//            rootViewController.appRemote.disconnect()
-//        }
+        
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
@@ -62,15 +39,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SPTSessionManagerDelegate
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-//        if let _ = rootViewController.appRemote.connectionParameters.accessToken {
-//            rootViewController.appRemote.connect()
-//        }
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    
+    
+    func setupSpotify() {
+        SPTAuth.defaultInstance().clientID = Constants.clientID
+        SPTAuth.defaultInstance().redirectURL = Constants.redirectURI
+        SPTAuth.defaultInstance().sessionUserDefaultsKey = Constants.sessionKey
+        
+        //For this application we just want to stream music, so we will only request the streaming scope
+        SPTAuth.defaultInstance().requestedScopes = [SPTAuthStreamingScope]
+        
+        // Start the player (this is only need for applications that using streaming, which we will use
+        // in this tutorial)
+        do {
+            try SPTAudioStreamingController.sharedInstance().start(withClientId: Constants.clientID)
+        } catch {
+            fatalError("Couldn't start Spotify SDK")
+        }
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        //Check if this URL was sent from the Spotify app or website
+        if SPTAuth.defaultInstance().canHandle(url) {
+            
+            //Send out a notification which we can listen for in our sign in view controller
+            NotificationCenter.default.post(name: NSNotification.Name.Spotify.authURLOpened, object: url)
+            
+            return true
+        }
+        
+        return false
+    }
 
 }
 
