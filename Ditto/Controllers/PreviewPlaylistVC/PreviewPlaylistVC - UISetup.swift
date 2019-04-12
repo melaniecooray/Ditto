@@ -49,11 +49,27 @@ extension PreviewPlaylistViewController {
         view.addSubview(numberLabel)
         
         liveLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width/3, height: view.frame.height/20))
-        liveLabel.center = CGPoint(x: view.frame.width/2, y: codeLabel.frame.maxY + view.frame.height/10)
+        liveLabel.center = CGPoint(x: view.frame.width/2, y: codeLabel.frame.maxY + view.frame.height/7)
         liveLabel.font = UIFont(name: "Roboto-Regular", size: 20)
         liveLabel.textColor = .white
         liveLabel.textAlignment = .center
         liveLabel.text = "listening now"
         view.addSubview(liveLabel)
     }
+    
+    func setUpProfiles() {
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumLineSpacing = view.frame.width/10
+        layout.itemSize = CGSize(width: view.frame.height/16, height: view.frame.height/16)
+        layout.scrollDirection = .horizontal
+        scrollPics = UICollectionView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height/16), collectionViewLayout: layout)
+        scrollPics.center = CGPoint(x: view.frame.width/2, y: liveLabel.frame.maxY + view.frame.height/14)
+        scrollPics.register(ProfileCell.self, forCellWithReuseIdentifier: "scrollCell")
+        scrollPics.delegate = self
+        scrollPics.dataSource = self
+        scrollPics.contentInset = UIEdgeInsets.init(top: 0, left: view.frame.width/12, bottom: 0, right: view.frame.width/12)
+        scrollPics.backgroundColor = .clear
+        view.addSubview(scrollPics)
+    }
 }
+
