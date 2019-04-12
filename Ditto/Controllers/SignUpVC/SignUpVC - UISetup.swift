@@ -181,6 +181,7 @@ extension SignUpViewController {
                 }
                 let ref = Database.database().reference()
                 let userRef = ref.child("users").child(userName!)
+                UserDefaults.standard.setValue(userName, forKey: "name")
                 let values = ["Name": userName, "Email": userEmail]
                 
                 userRef.updateChildValues(values, withCompletionBlock: { (error, ref) in

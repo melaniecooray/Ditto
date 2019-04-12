@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class NewPlaylistViewController: UIViewController, UITextFieldDelegate {
     
@@ -38,8 +39,23 @@ class NewPlaylistViewController: UIViewController, UITextFieldDelegate {
         // Do any additional f setup after loading the view.
     }
     
+    
+    
     @objc func createButtonClicked() {
+        let db = Database.database().reference()
+        let playlistNode = db.child("playlists")
+        let playlistID = makeCode()
+        playlistNode.child(playlistID).setValue(["name": newPlaylistTextField.text!, "code": playlistID, "members": UserDefaults.standard.value(forKey: "name")])
         performSegue(withIdentifier: "toCreatePlaylist", sender: self)
+    }
+    
+    func makeCode() -> String {
+        var key = "";
+        for _ in 1...6 {
+            key += String(Int.random(in: 0...9))
+            //key += ((Int.random(in: 0...9) * Int(truncating: NSDecimalNumber(decimal: pow(10, num) - 1))))
+        }
+        return key
     }
     
     func addTapDismiss() {

@@ -67,7 +67,7 @@ class ConnectViewController: UIViewController, SPTAudioStreamingDelegate, SPTAud
             // Check if there is a session
             if let session = session {
                 print("there is a session")
-                UserDefaults.setValue(session.accessToken, forKey: "accessToken")
+                UserDefaults.standard.setValue(session.accessToken, forKey: "accessToken")
                 // If there is use it to login to the audio streaming controller where we can play music.
                 if self.player == nil {
                     self.player = SPTAudioStreamingController.sharedInstance()
@@ -106,7 +106,7 @@ class ConnectViewController: UIViewController, SPTAudioStreamingDelegate, SPTAud
         
         DispatchQueue.main.async {
             // Present next view controller or use performSegue(withIdentifier:, sender:)
-            self.performSegue(withIdentifier: "toTabBar", sender: self)
+            self.performSegue(withIdentifier: "toLogin", sender: self)
             //self.present(PlaylistsViewController(), animated: true, completion: nil)
         }
     }
