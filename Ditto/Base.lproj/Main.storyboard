@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="djn-eK-hok">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="djn-eK-hok">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -62,11 +62,27 @@
                     <connections>
                         <segue destination="UIE-NL-Uri" kind="show" identifier="toTabBar" id="c0J-Xr-F2s"/>
                         <segue destination="VmA-bx-LBv" kind="show" identifier="toLogin" id="ebl-aY-Xac"/>
+                        <segue destination="Smb-Ml-mKq" kind="show" identifier="toConnectSpotify" id="le0-Gx-fKk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wlz-j7-YuL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="686" y="150"/>
+        </scene>
+        <!--Spotify Connect View Controller-->
+        <scene sceneID="aDb-99-X0m">
+            <objects>
+                <viewController id="Smb-Ml-mKq" customClass="SpotifyConnectViewController" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="poD-6q-7VD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Lda-3d-fyZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccH-bS-Mdj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1785" y="-192"/>
         </scene>
         <!--Current-->
         <scene sceneID="HtG-ET-5g3">
@@ -202,12 +218,40 @@
                         <viewLayoutGuide key="safeArea" id="IIR-bm-w1d"/>
                     </view>
                     <connections>
-                        <segue destination="ZXq-4z-foA" kind="show" identifier="toCreatePlaylist" id="B12-Qj-y7g"/>
+                        <segue destination="RBq-e7-n16" kind="show" identifier="toCreatePlaylist" id="aGw-U5-5vJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="As2-66-L8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7134" y="-636"/>
+        </scene>
+        <!--Create New Playlist Table View Controller-->
+        <scene sceneID="4Km-Tp-YNo">
+            <objects>
+                <tableViewController id="RBq-e7-n16" customClass="CreateNewPlaylistTableViewController" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="X3W-Qr-lRu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="n2N-2l-5zH">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n2N-2l-5zH" id="G1L-Kr-xak">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RBq-e7-n16" id="Qa3-i7-X7M"/>
+                            <outlet property="delegate" destination="RBq-e7-n16" id="yrb-bX-XTc"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="36O-1f-xOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8890" y="-636"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fhz-Tx-eQe">
@@ -235,8 +279,7 @@
         <image name="profile" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ljJ-Zx-eV8"/>
-        <segue reference="XxU-Mk-p4t"/>
+        <segue reference="c0J-Xr-F2s"/>
         <segue reference="ebl-aY-Xac"/>
     </inferredMetricsTieBreakers>
 </document>

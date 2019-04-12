@@ -23,6 +23,13 @@ extension ConnectViewController {
         dummyProfileButton.backgroundColor = .gray
         dummyProfileButton.addTarget(self, action: #selector(toTabBar), for: .touchUpInside)
         view.addSubview(dummyProfileButton)
+        
+        let dummyConnectSpotify = UIButton(frame: CGRect(x: view.frame.width * 4/6, y: view.frame.height/2, width: view.frame.width/4, height: view.frame.height/20))
+        dummyConnectSpotify.setTitle("To Spotify Connect", for: .normal)
+        dummyConnectSpotify.layer.cornerRadius = 5.0
+        dummyConnectSpotify.backgroundColor = .gray
+        dummyConnectSpotify.addTarget(self, action: #selector(toSpotifyConnect), for: .touchUpInside)
+        view.addSubview(dummyConnectSpotify)
         print("adding dummy buttons")
     }
     
@@ -32,5 +39,9 @@ extension ConnectViewController {
     
     @objc func toTabBar() {
         performSegue(withIdentifier: "toTabBar", sender: self)
+    }
+    
+    @objc func toSpotifyConnect() {
+        performSegue(withIdentifier: "toConnectSpotify", sender: self)
     }
 }

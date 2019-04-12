@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.0.0-beta.4)
   - Firebase/Auth (5.16.0):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.3.0)
@@ -70,6 +71,7 @@ PODS:
   - SpotifyLogin (0.1.6)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.0.0-beta.3)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -78,6 +80,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -94,6 +97,7 @@ SPEC REPOS:
     - SpotifyLogin
 
 SPEC CHECKSUMS:
+  Alamofire: 6458d95477bc40adf10129f22c67cfb014162dc8
   Firebase: 749a8ff4962f9d8c79dda1966de20f6f77583d67
   FirebaseAnalytics: d35d47c03c50c73c14a7fd31463c5775843e78a9
   FirebaseAuth: c9b3ff063c223d2841d97240af547ce511bce19a
@@ -109,6 +113,6 @@ SPEC CHECKSUMS:
   SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
   SpotifyLogin: 9cdf82ff13e5f37e5ddc7fd07cf9793a9ebd1124
 
-PODFILE CHECKSUM: 7bc276f1484fffeb1cbd54ff04a6e3045df7a817
+PODFILE CHECKSUM: afc7918436bd1f8b5a580891bf1fb3083e9d91a6
 
 COCOAPODS: 1.6.0
