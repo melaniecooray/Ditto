@@ -50,6 +50,7 @@
 		7B77C05E225FEDFC00674712 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B77C05D225FEDFC00674712 /* Constants.swift */; };
 		EF11BBFA226006330064B4C6 /* CreateNewPlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11BBF9226006330064B4C6 /* CreateNewPlaylistViewController.swift */; };
 		EF11BBFD226064980064B4C6 /* SpotifyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11BBFC226064980064B4C6 /* SpotifyAPIClient.swift */; };
+		EF11BC03226103050064B4C6 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11BC02226103050064B4C6 /* AudioViewController.swift */; };
 		EF9B482522592786008EAA21 /* PlaylistsVC - UISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B482422592786008EAA21 /* PlaylistsVC - UISetup.swift */; };
 		EF9B4827225938AF008EAA21 /* PlaylistsVC - Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B4826225938AF008EAA21 /* PlaylistsVC - Table.swift */; };
 		EF9B48292259394B008EAA21 /* PlaylistViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B48282259394B008EAA21 /* PlaylistViewCell.swift */; };
@@ -122,6 +123,7 @@
 		BDBA1BDEAC3FC82272D3F5CF /* Pods_DittoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DittoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF11BBF9226006330064B4C6 /* CreateNewPlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlaylistViewController.swift; sourceTree = "<group>"; };
 		EF11BBFC226064980064B4C6 /* SpotifyAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyAPIClient.swift; sourceTree = "<group>"; };
+		EF11BC02226103050064B4C6 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
 		EF9B482422592786008EAA21 /* PlaylistsVC - UISetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistsVC - UISetup.swift"; sourceTree = "<group>"; };
 		EF9B4826225938AF008EAA21 /* PlaylistsVC - Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistsVC - Table.swift"; sourceTree = "<group>"; };
 		EF9B48282259394B008EAA21 /* PlaylistViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewCell.swift; sourceTree = "<group>"; };
@@ -388,6 +390,7 @@
 		EF11BBF8226005FA0064B4C6 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				EF11BC02226103050064B4C6 /* AudioViewController.swift */,
 				EF11BBF9226006330064B4C6 /* CreateNewPlaylistViewController.swift */,
 			);
 			path = "New Group";
@@ -631,6 +634,7 @@
 				7B5AFEF8223DE53200B6168B /* PlaylistsVC.swift in Sources */,
 				7B5AFECA223DD0A300B6168B /* AppDelegate.swift in Sources */,
 				423C25E622594EE700703008 /* PreviewPlaylistVC - UISetup.swift in Sources */,
+				EF11BC03226103050064B4C6 /* AudioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
