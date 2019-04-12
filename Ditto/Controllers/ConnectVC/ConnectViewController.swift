@@ -93,7 +93,8 @@ class ConnectViewController: UIViewController, SPTAudioStreamingDelegate {
         
         DispatchQueue.main.async {
             // Present next view controller or use performSegue(withIdentifier:, sender:)
-            self.present(PlaylistsViewController(), animated: true, completion: nil)
+            self.performSegue(withIdentifier: "toTabBar", sender: self)
+            //self.present(PlaylistsViewController(), animated: true, completion: nil)
         }
     }
     
