@@ -20,7 +20,7 @@ class NavBarController: UINavigationController {
         self.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationBar.shadowImage = UIImage()
         UIBarButtonItem.appearance()
-            .setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Roboto-Regular", size: 14.0)!], for: .normal)
+            .setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Roboto-Regular", size: 18.0)!], for: .normal)
 
         // Do any additional setup after loading the view.
     }

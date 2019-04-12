@@ -22,6 +22,9 @@
 		423C25E422594ED000703008 /* EnterCodeVC - UISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C25E322594ED000703008 /* EnterCodeVC - UISetup.swift */; };
 		423C25E622594EE700703008 /* PreviewPlaylistVC - UISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C25E522594EE700703008 /* PreviewPlaylistVC - UISetup.swift */; };
 		423C25E822595E5100703008 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C25E722595E5100703008 /* NavBarController.swift */; };
+		42F9BE8922608D46004F744C /* PreviewPlaylistVC - Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F9BE8822608D46004F744C /* PreviewPlaylistVC - Collection.swift */; };
+		42F9BE8B22608D64004F744C /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F9BE8A22608D64004F744C /* ProfileCell.swift */; };
+		42F9BE8D22608D78004F744C /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F9BE8C22608D78004F744C /* RoundedImage.swift */; };
 		524094C77B7E54EB91B1B297 /* Pods_Ditto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8F77EEC14D69478BDD6B73 /* Pods_Ditto.framework */; };
 		6D07C94E478C6D416799BBAA /* Pods_DittoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDBA1BDEAC3FC82272D3F5CF /* Pods_DittoUITests.framework */; };
 		7B556F4A224E97F80003FA96 /* SignUpVC - UISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B556F49224E97F80003FA96 /* SignUpVC - UISetup.swift */; };
@@ -86,6 +89,9 @@
 		423C25E322594ED000703008 /* EnterCodeVC - UISetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnterCodeVC - UISetup.swift"; sourceTree = "<group>"; };
 		423C25E522594EE700703008 /* PreviewPlaylistVC - UISetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewPlaylistVC - UISetup.swift"; sourceTree = "<group>"; };
 		423C25E722595E5100703008 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
+		42F9BE8822608D46004F744C /* PreviewPlaylistVC - Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewPlaylistVC - Collection.swift"; sourceTree = "<group>"; };
+		42F9BE8A22608D64004F744C /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		42F9BE8C22608D78004F744C /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		4E5108E4395F066C8564CC9B /* Pods-Ditto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ditto.debug.xcconfig"; path = "Target Support Files/Pods-Ditto/Pods-Ditto.debug.xcconfig"; sourceTree = "<group>"; };
 		4EEDB7F3A927FB83DCA61667 /* Pods-Ditto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ditto.release.xcconfig"; path = "Target Support Files/Pods-Ditto/Pods-Ditto.release.xcconfig"; sourceTree = "<group>"; };
 		66FF58C1B2B71EAFE1DB239C /* Pods-DittoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DittoUITests.release.xcconfig"; path = "Target Support Files/Pods-DittoUITests/Pods-DittoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +175,7 @@
 			children = (
 				423C25CC22545A9A00703008 /* Cell.swift */,
 				EF9B48282259394B008EAA21 /* PlaylistViewCell.swift */,
+				42F9BE8A22608D64004F744C /* ProfileCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +198,7 @@
 				7B5AFED0223DD0A500B6168B /* Assets.xcassets */,
 				423C25C82252E29300703008 /* HexString.swift */,
 				7B77C05D225FEDFC00674712 /* Constants.swift */,
+				42F9BE8C22608D78004F744C /* RoundedImage.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -218,6 +226,7 @@
 			children = (
 				423C25E122594E5C00703008 /* PreviewPlaylistVC.swift */,
 				423C25E522594EE700703008 /* PreviewPlaylistVC - UISetup.swift */,
+				42F9BE8822608D46004F744C /* PreviewPlaylistVC - Collection.swift */,
 			);
 			path = PreviewPlaylistVC;
 			sourceTree = "<group>";
@@ -597,6 +606,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42F9BE8B22608D64004F744C /* ProfileCell.swift in Sources */,
 				423C25CB22545A6C00703008 /* User.swift in Sources */,
 				7B77C05E225FEDFC00674712 /* Constants.swift in Sources */,
 				EF9B482E22599109008EAA21 /* NewPlaylistVC.swift in Sources */,
@@ -613,6 +623,7 @@
 				7B77C04922596F1900674712 /* ProfileVC - Table.swift in Sources */,
 				423C25E022594E4900703008 /* EnterCodeVC.swift in Sources */,
 				7B5AFF04223E00EA00B6168B /* LoginVC - UISetup.swift in Sources */,
+				42F9BE8D22608D78004F744C /* RoundedImage.swift in Sources */,
 				EF9B4827225938AF008EAA21 /* PlaylistsVC - Table.swift in Sources */,
 				7B5AFF02223DE77000B6168B /* LaunchVC - UISetup.swift in Sources */,
 				423C25D42259234300703008 /* ConnectVC - UISetup.swift in Sources */,
@@ -634,7 +645,11 @@
 				7B5AFEF8223DE53200B6168B /* PlaylistsVC.swift in Sources */,
 				7B5AFECA223DD0A300B6168B /* AppDelegate.swift in Sources */,
 				423C25E622594EE700703008 /* PreviewPlaylistVC - UISetup.swift in Sources */,
+<<<<<<< HEAD
 				EF11BC03226103050064B4C6 /* AudioViewController.swift in Sources */,
+=======
+				42F9BE8922608D46004F744C /* PreviewPlaylistVC - Collection.swift in Sources */,
+>>>>>>> e5e8b457fba6db5edd654a37d44e5d2d3f2b0cc6
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
