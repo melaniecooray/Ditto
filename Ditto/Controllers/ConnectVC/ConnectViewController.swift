@@ -8,12 +8,15 @@
 
 import UIKit
 
-class ConnectViewController: UIViewController, SPTAudioStreamingDelegate {
+class ConnectViewController: UIViewController, SPTAudioStreamingDelegate, SPTAudioStreamingPlaybackDelegate {
     
     var dummyLogButton: UIButton!
     var dummyProfileButton: UIButton!
     
     var connectButton: UIButton!
+    
+    var session: SPTSession!
+    var player: SPTAudioStreamingController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,9 +66,18 @@ class ConnectViewController: UIViewController, SPTAudioStreamingDelegate {
             
             // Check if there is a session
             if let session = session {
+                print("there is a session")
+                UserDefaults.setValue(session.accessToken, forKey: "accessToken")
                 // If there is use it to login to the audio streaming controller where we can play music.
-                SPTAudioStreamingController.sharedInstance().delegate = self
-                SPTAudioStreamingController.sharedInstance().login(withAccessToken: session.accessToken)
+                if self.player == nil {
+                    self.player = SPTAudioStreamingController.sharedInstance()
+                    if !(self.player?.loggedIn)! {
+                        self.player?.delegate = self
+                        self.player?.playbackDelegate = self
+                        self.player?.login(withAccessToken: session.accessToken)
+                    }
+                }
+                
             }
         }
     }
@@ -99,7 +111,16 @@ class ConnectViewController: UIViewController, SPTAudioStreamingDelegate {
         }
     }
     
+    
     func audioStreamingDidLogin(_ audioStreaming: SPTAudioStreamingController!) {
+        audioStreaming.playSpotifyURI("spotify:track:3skn2lauGk7Dx6bVIt5DVj", startingWith: 0, startingWithPosition: 0, callback: { (error) in
+            if error != nil {
+                print("*** failed to play: \(String(describing: error))")
+                return
+            }else{
+                print("Playing!!")
+            }
+        })
         self.successfulLogin()
     }
     
