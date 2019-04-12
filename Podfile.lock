@@ -69,6 +69,7 @@ PODS:
   - nanopb/encode (0.3.901)
   - SkyFloatingLabelTextField (3.6.0)
   - SpotifyLogin (0.1.6)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-beta.3)
@@ -77,6 +78,7 @@ DEPENDENCIES:
   - Firebase/Database
   - SkyFloatingLabelTextField
   - SpotifyLogin (~> 0.1)
+  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -95,6 +97,7 @@ SPEC REPOS:
     - nanopb
     - SkyFloatingLabelTextField
     - SpotifyLogin
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 6458d95477bc40adf10129f22c67cfb014162dc8
@@ -112,7 +115,8 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
   SpotifyLogin: 9cdf82ff13e5f37e5ddc7fd07cf9793a9ebd1124
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: afc7918436bd1f8b5a580891bf1fb3083e9d91a6
+PODFILE CHECKSUM: 1a679e542fe3f01960bc6505f1fe747c1b1f415a
 
 COCOAPODS: 1.6.0

@@ -67,7 +67,8 @@ class ConnectViewController: UIViewController, SPTAudioStreamingDelegate, SPTAud
             // Check if there is a session
             if let session = session {
                 print("there is a session")
-                UserDefaults.setValue(session.accessToken, forKey: "accessToken")
+                UserDefaults.standard.setValue(session.accessToken, forKey: "accessToken")
+                //UserDefaults.value(forKey: "accessToken")
                 // If there is use it to login to the audio streaming controller where we can play music.
                 if self.player == nil {
                     self.player = SPTAudioStreamingController.sharedInstance()
