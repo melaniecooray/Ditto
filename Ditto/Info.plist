@@ -62,11 +62,7 @@
 	</array>
     <key>LSApplicationQueriesSchemes</key>
     <array>
-<<<<<<< HEAD
-        <string>spotify</string>
-=======
         <string>spotify-action</string>
->>>>>>> 4b17a4533f8925968c4f54e14eefcfaf1e79d0ba
     </array>
 </dict>
 </plist>

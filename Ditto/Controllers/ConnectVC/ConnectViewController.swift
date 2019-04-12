@@ -17,6 +17,7 @@ class ConnectViewController: UIViewController, SPTAudioStreamingDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        makeButtons()
         
         connectButton = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
         connectButton.center = CGPoint(x: view.frame.width/2, y: view.frame.height/2)
@@ -93,7 +94,8 @@ class ConnectViewController: UIViewController, SPTAudioStreamingDelegate {
         
         DispatchQueue.main.async {
             // Present next view controller or use performSegue(withIdentifier:, sender:)
-            self.present(PlaylistsViewController(), animated: true, completion: nil)
+            self.performSegue(withIdentifier: "toTabBar", sender: self)
+            //self.present(PlaylistsViewController(), animated: true, completion: nil)
         }
     }
     

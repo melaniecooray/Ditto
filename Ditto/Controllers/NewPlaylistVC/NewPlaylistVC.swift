@@ -18,11 +18,13 @@ class NewPlaylistViewController: UIViewController, UITextFieldDelegate {
     var chosenImage: UIImage!
     
     var createButton: UIButton!
+    
+    var blueBackground: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(red:0.45, green:0.51, blue:0.77, alpha:1.0)
+
         
         newPlaylistSetUp()
         setUpImagePicker()

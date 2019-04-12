@@ -48,6 +48,7 @@
 		7B77C059225FEA1E00674712 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B77C058225FEA1E00674712 /* SpotifyAuthentication.framework */; };
 		7B77C05B225FEA2600674712 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B77C05A225FEA2500674712 /* SpotifyAudioPlayback.framework */; };
 		7B77C05E225FEDFC00674712 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B77C05D225FEDFC00674712 /* Constants.swift */; };
+		EF11BBFA226006330064B4C6 /* CreateNewPlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11BBF9226006330064B4C6 /* CreateNewPlaylistViewController.swift */; };
 		EF9B482522592786008EAA21 /* PlaylistsVC - UISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B482422592786008EAA21 /* PlaylistsVC - UISetup.swift */; };
 		EF9B4827225938AF008EAA21 /* PlaylistsVC - Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B4826225938AF008EAA21 /* PlaylistsVC - Table.swift */; };
 		EF9B48292259394B008EAA21 /* PlaylistViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B48282259394B008EAA21 /* PlaylistViewCell.swift */; };
@@ -118,6 +119,7 @@
 		83B198A80D7721665334537E /* Pods-DittoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DittoUITests.debug.xcconfig"; path = "Target Support Files/Pods-DittoUITests/Pods-DittoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D8F77EEC14D69478BDD6B73 /* Pods_Ditto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ditto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDBA1BDEAC3FC82272D3F5CF /* Pods_DittoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DittoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF11BBF9226006330064B4C6 /* CreateNewPlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlaylistViewController.swift; sourceTree = "<group>"; };
 		EF9B482422592786008EAA21 /* PlaylistsVC - UISetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistsVC - UISetup.swift"; sourceTree = "<group>"; };
 		EF9B4826225938AF008EAA21 /* PlaylistsVC - Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaylistsVC - Table.swift"; sourceTree = "<group>"; };
 		EF9B48282259394B008EAA21 /* PlaylistViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewCell.swift; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 		7B5AFEEB223DE43F00B6168B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EF11BBF8226005FA0064B4C6 /* New Group */,
 				423C25DE22594E0E00703008 /* PreviewPlaylistVC */,
 				423C25DD22594DFE00703008 /* EnterCodeVC */,
 				7B5AFEF2223DE4D100B6168B /* ProfileVC */,
@@ -377,6 +380,14 @@
 				66FF58C1B2B71EAFE1DB239C /* Pods-DittoUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF11BBF8226005FA0064B4C6 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				EF11BBF9226006330064B4C6 /* CreateNewPlaylistViewController.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		EF9B482C225990D3008EAA21 /* NewPlaylistVC */ = {
@@ -502,6 +513,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Ditto/Pods-Ditto-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
@@ -513,6 +525,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
@@ -579,6 +592,7 @@
 				423C25CB22545A6C00703008 /* User.swift in Sources */,
 				7B77C05E225FEDFC00674712 /* Constants.swift in Sources */,
 				EF9B482E22599109008EAA21 /* NewPlaylistVC.swift in Sources */,
+				EF11BBFA226006330064B4C6 /* CreateNewPlaylistViewController.swift in Sources */,
 				7B5AFF0C2243567D00B6168B /* ConnectButton.swift in Sources */,
 				EF9B48292259394B008EAA21 /* PlaylistViewCell.swift in Sources */,
 				EF9B48312259990D008EAA21 /* NewPlaylistVC - UISetup.swift in Sources */,

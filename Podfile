@@ -12,6 +12,7 @@ target 'Ditto' do
   pod 'SkyFloatingLabelTextField'
   source 'https://github.com/CocoaPods/Specs.git'
   pod 'SpotifyLogin', '~> 0.1'
+  pod 'Alamofire', '~> 5.0.0-beta.3'
 
   target 'DittoUITests' do
     inherit! :search_paths

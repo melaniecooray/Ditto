@@ -218,12 +218,40 @@
                         <viewLayoutGuide key="safeArea" id="IIR-bm-w1d"/>
                     </view>
                     <connections>
-                        <segue destination="ZXq-4z-foA" kind="show" identifier="toCreatePlaylist" id="B12-Qj-y7g"/>
+                        <segue destination="RBq-e7-n16" kind="show" identifier="toCreatePlaylist" id="aGw-U5-5vJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="As2-66-L8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7134" y="-636"/>
+        </scene>
+        <!--Create New Playlist Table View Controller-->
+        <scene sceneID="4Km-Tp-YNo">
+            <objects>
+                <tableViewController id="RBq-e7-n16" customClass="CreateNewPlaylistTableViewController" customModule="Ditto" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="X3W-Qr-lRu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="n2N-2l-5zH">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n2N-2l-5zH" id="G1L-Kr-xak">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RBq-e7-n16" id="Qa3-i7-X7M"/>
+                            <outlet property="delegate" destination="RBq-e7-n16" id="yrb-bX-XTc"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="36O-1f-xOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8890" y="-636"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fhz-Tx-eQe">
@@ -252,7 +280,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="c0J-Xr-F2s"/>
-        <segue reference="XxU-Mk-p4t"/>
         <segue reference="ebl-aY-Xac"/>
     </inferredMetricsTieBreakers>
 </document>
