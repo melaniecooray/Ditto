@@ -45,6 +45,7 @@ class NewPlaylistViewController: UIViewController, UITextFieldDelegate {
         let db = Database.database().reference()
         let playlistNode = db.child("playlists")
         let playlistID = makeCode()
+        UserDefaults.standard.set(playlistID, forKey: "playlistID")
         playlistNode.child(playlistID).setValue(["name": newPlaylistTextField.text!, "code": playlistID, "members": UserDefaults.standard.value(forKey: "name")])
         performSegue(withIdentifier: "toCreatePlaylist", sender: self)
     }

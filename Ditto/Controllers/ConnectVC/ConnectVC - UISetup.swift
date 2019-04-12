@@ -29,7 +29,7 @@ extension ConnectViewController {
         dummyConnectSpotify.layer.cornerRadius = 5.0
         dummyConnectSpotify.backgroundColor = .gray
         dummyConnectSpotify.addTarget(self, action: #selector(toSpotifyConnect), for: .touchUpInside)
-        view.addSubview(dummyConnectSpotify)
+        //view.addSubview(dummyConnectSpotify)
         print("adding dummy buttons")
     }
     

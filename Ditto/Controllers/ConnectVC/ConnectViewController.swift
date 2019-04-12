@@ -21,12 +21,13 @@ class ConnectViewController: UIViewController, SPTAudioStreamingDelegate, SPTAud
     override func viewDidLoad() {
         super.viewDidLoad()
         makeButtons()
-        
         connectButton = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
         connectButton.center = CGPoint(x: view.frame.width/2, y: view.frame.height/2)
-        connectButton.setTitle("Connect", for: .normal)
+        connectButton.setTitle("Connect To Spotify", for: .normal)
         connectButton.addTarget(self, action: #selector(connectButtonPressed), for: .touchUpInside)
-        connectButton.backgroundColor = .green
+        connectButton.backgroundColor = UIColor(red:(29.0 / 255.0), green:(185.0 / 255.0), blue:(84.0 / 255.0), alpha:1.0)
+        connectButton.layer.cornerRadius = 10
+        connectButton.titleLabel?.font = UIFont.systemFont(ofSize: UIFont.systemFontSize, weight: .heavy)
         view.addSubview(connectButton)
     }
     

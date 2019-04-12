@@ -8,11 +8,12 @@
 
 import UIKit
 import Alamofire
-
+import Firebase
 
 class CreateNewPlaylistTableViewController: UITableViewController {
     
     var names = [String]()
+    var uris = [String]()
     
     var searchURL = "https://api.spotify.com/v1/search?q=Shawn+Mendes&type=track"
     let parameters: HTTPHeaders = ["Accept":"application/json", "Authorization":"Bearer \(UserDefaults.standard.value(forKey: "accessToken")!)"]
@@ -46,8 +47,10 @@ class CreateNewPlaylistTableViewController: UITableViewController {
                         let item = items[i]
                         
                         let name = item["name"] as! String
+                        let uri = item["uri"] as! String
                         
                         names.append(name)
+                        uris.append(uri)
                         
                         self.tableView.reloadData()
                     }
@@ -69,6 +72,10 @@ class CreateNewPlaylistTableViewController: UITableViewController {
         cell?.textLabel?.text = names[indexPath.row]
         
         return cell!
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
     
     override func didReceiveMemoryWarning() {
