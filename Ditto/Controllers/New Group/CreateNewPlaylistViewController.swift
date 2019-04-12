@@ -9,40 +9,37 @@
 import UIKit
 import Alamofire
 
+
 class CreateNewPlaylistTableViewController: UITableViewController {
     
     var names = [String]()
     
-    var searchURL = "https://api.spotify.com/v1/search?q=Shawn%20Mendes&type=track%2Cartist&market=US&offset=20"
+    var searchURL = "https://api.spotify.com/v1/search?q=Shawn+Mendes&type=track"
+    let parameters: HTTPHeaders = ["Accept":"application/json", "Authorization":"Bearer \(UserDefaults.standard.value(forKey: "accessToken")!)"]
     
-    typealias JSONStandard = [String : AnyObject]
-
+    typealias JSONStandar = [String : AnyObject]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        callAlamo(url: searchURL)
+        // Do any additional setup after loading the view, typically from a nib.
         
-        
-
-        // Do any additional setup after loading the view.
+        callAlamo(url: searchURL, headers: parameters)
     }
     
-    
-    func callAlamo(url : String) {
-        AF.request(url).responseJSON(completionHandler: {
+    func callAlamo(url : String, headers: HTTPHeaders){
+        AF.request(url, headers: parameters).responseJSON(completionHandler: {
             response in
             
             self.parseData(JSONData: response.data!)
-            
         })
     }
     
     func parseData(JSONData : Data) {
-        print("trying to parse")
         do {
-            var readableJSON = try JSONSerialization.jsonObject(with: JSONData, options: .mutableContainers) as! JSONStandard
+            var readableJSON = try JSONSerialization.jsonObject(with: JSONData, options: .mutableContainers) as! JSONStandar
             
-            if let tracks = readableJSON["tracks"] as? JSONStandard {
-                if let items = tracks["items"] as? [JSONStandard]{
+            if let tracks = readableJSON["tracks"] as? JSONStandar{
+                if let items = tracks["items"] as? [JSONStandar]{
                     
                     for i in 0..<items.count {
                         
@@ -59,7 +56,6 @@ class CreateNewPlaylistTableViewController: UITableViewController {
             print(readableJSON)
         }catch{
             print(error)
-            print("this")
         }
     }
     
@@ -69,19 +65,16 @@ class CreateNewPlaylistTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        
         cell?.textLabel?.text = names[indexPath.row]
+        
         return cell!
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
-    */
-
+    
+    
 }
